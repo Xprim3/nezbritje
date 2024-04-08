@@ -57,6 +57,10 @@ h6 {
   font-family: var(--font-primary);
 }
 
+button {
+  color: rgb(0, 0, 0);
+}
+
 /* Google Icons */
 
 .material-symbols-outlined {
