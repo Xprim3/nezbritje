@@ -59,6 +59,7 @@ h6 {
 
 button {
   color: rgb(0, 0, 0);
+  touch-action: manipulation;
 }
 
 /* Google Icons */
