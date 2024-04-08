@@ -44,11 +44,11 @@ footer nav {
   border: none;
   background: none;
   cursor: pointer;
-  row-gap: 3px;
+  row-gap: 2px;
 }
 
 .icon-text-button .footer-icon {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   color: var(--color-font);
 }
@@ -58,7 +58,6 @@ footer nav {
   text-align: center;
 }
 .footer-icon {
-
   color: rgb(198, 67, 93);
 }
 
