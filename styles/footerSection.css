@@ -1,0 +1,72 @@
+/*
+* Website Designed by Denis Januzi
+* Created: April 1 2024
+* Contact Address: denisjanuzi@gmail.com (+38349106068)
+* Author: Denis Januzi
+* License: denis.cilesi.com
+*/
+
+/*--------------------------------------------------------------
+# Footer Section Styling
+--------------------------------------------------------------*/
+
+footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  color: #fff;
+  transition: bottom 0.3s ease-in-out;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------------------------------------------
+# Footer Buttons Styling
+--------------------------------------------------------------*/
+
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  width: 100%;
+  row-gap: 15px;
+  padding: 15px 0;
+}
+
+.icon-text-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  row-gap: 3px;
+}
+
+.icon-text-button .footer-icon {
+  font-size: 24px;
+  text-align: center;
+  color: var(--color-font);
+}
+
+.icon-text-button .footer-btn-text {
+  font-size: 12px;
+  text-align: center;
+}
+.footer-icon {
+
+  color: rgb(198, 67, 93);
+}
+
+.icon-text-button.selected,
+.icon-text-button.selected span {
+  color: rgb(198, 67, 93);
+}
+
+/*--------------------------------------------------------------
+# END of Footer Buttons Styling
+--------------------------------------------------------------*/
