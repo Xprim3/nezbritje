@@ -34,7 +34,7 @@ footer nav {
   background-color: #f8f8f8;
   width: 100%;
   row-gap: 15px;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .icon-text-button {
@@ -48,7 +48,7 @@ footer nav {
 }
 
 .icon-text-button .footer-icon {
-  font-size: 20px;
+  font-size: 21px;
   text-align: center;
   color: var(--color-font);
 }
