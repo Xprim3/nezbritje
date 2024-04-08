@@ -43,17 +43,17 @@ footer nav {
   border: none;
   background: none;
   cursor: pointer;
-  row-gap: 3px;
+  row-gap: 2px;
 }
 
 .icon-text-button .footer-icon {
-  font-size: 25px;
+  font-size: 21px;
   text-align: center;
   color: var(--color-font);
 }
 
 .icon-text-button .footer-btn-text {
-  font-size: 13px;
+  font-size: 12px;
   text-align: center;
 }
 .footer-icon {
