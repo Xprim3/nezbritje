@@ -30,11 +30,10 @@ footer {
 footer nav {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   background-color: #f8f8f8;
   width: 100%;
   row-gap: 15px;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .icon-text-button {
