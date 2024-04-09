@@ -32,6 +32,8 @@
 # General
 --------------------------------------------------------------*/
 body {
+  display: block;
+  position: relative;
   font-family: var(--font-default);
   color: var(--color-fonts);
   background-color: var(--color-bck);
