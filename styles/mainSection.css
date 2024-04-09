@@ -27,14 +27,18 @@ main {
     column-gap: 10px;
     height: auto;
     padding: 10px 15px;
+    background-color: #fff;
+}
+
+.navSection input {
+    background-color: #f0f0f0;
 }
 
 .navSection button {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
     background-color: transparent;
-    border: 1px solid grey;
     cursor: pointer;
-    border-radius: 5px;
 }
