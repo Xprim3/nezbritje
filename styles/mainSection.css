@@ -13,8 +13,28 @@
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     background-color: #f0f0f0;
+}
+
+/*--------------------------------------------------------------
+# Navigation Section Styling
+--------------------------------------------------------------*/
+
+.navSection {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    height: auto;
+    padding: 10px 15px;
+}
+
+.navSection button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 5px;
 }
