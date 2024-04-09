@@ -19,7 +19,6 @@ footer {
   height: auto;
   color: #fff;
   transition: bottom 0.3s ease-in-out;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 /*--------------------------------------------------------------
@@ -37,27 +36,25 @@ footer nav {
 }
 
 footer button {
-  color: black;
-}
-
-.icon-text-button {
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   border: none;
   background: none;
   cursor: pointer;
+  width: 100%;
   row-gap: 2px;
+  color: black;
+  padding: 10px 15px;
 }
 
-.icon-text-button .footer-icon {
+footer button .footer-icon {
   font-size: 21px;
   text-align: center;
   color: var(--color-font);
 }
 
-.icon-text-button .footer-btn-text {
+footer button .footer-btn-text {
   font-size: 12px;
   text-align: center;
 }
@@ -65,8 +62,8 @@ footer button {
   color: rgb(198, 67, 93);
 }
 
-.icon-text-button.selected,
-.icon-text-button.selected span {
+footer button.selected,
+footer button.selected span {
   color: rgb(198, 67, 93);
 }
 

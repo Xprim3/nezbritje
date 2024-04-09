@@ -36,6 +36,7 @@ body {
   color: var(--color-fonts);
   background-color: var(--color-bck);
   min-height: 100vh;
+  position: relative;
 }
 
 a {
