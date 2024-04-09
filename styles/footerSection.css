@@ -11,8 +11,7 @@
 --------------------------------------------------------------*/
 
 footer {
-  display: block;
-  position: absolute;
+  position: sticky;
   width: 100%;
   bottom: 0;
   display: flex;

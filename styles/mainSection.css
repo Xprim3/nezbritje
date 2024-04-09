@@ -13,7 +13,7 @@
 main {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100vh;
     background-color: #f0f0f0;
 }
 
