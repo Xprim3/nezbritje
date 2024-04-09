@@ -57,12 +57,6 @@ h6 {
   font-family: var(--font-primary);
 }
 
-button {
-  color: rgb(0, 0, 0);
-  touch-action: manipulation;
-  cursor: pointer;
-}
-
 /* Google Icons */
 
 .material-symbols-outlined {
