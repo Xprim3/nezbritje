@@ -36,6 +36,10 @@ footer nav {
   padding: 15px 0;
 }
 
+footer button {
+  color: black;
+}
+
 .icon-text-button {
   display: flex;
   flex-direction: column;
