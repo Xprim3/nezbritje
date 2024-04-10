@@ -22,7 +22,7 @@
   justify-content: start;
   align-items: center;
   border: 1px solid #e0e0e0;
-  max-width: 170px;
+  max-width: 110px;
 }
 
 .quantity-control .quantity-btn {
@@ -47,7 +47,7 @@
   column-gap: 10px;
   row-gap: 10px;
   justify-content: space-between;
-  padding: 0px 12px 10px 12px;
+  padding: 5px 12px 10px 12px;
 }
 
 .row-center button {
@@ -60,5 +60,8 @@
 
 .nbck {
   background-color: #e0e0e0;
+}
 
+.addCartBtn:active {
+  color: green;
 }
