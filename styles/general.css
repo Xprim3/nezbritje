@@ -40,10 +40,12 @@
 body {
   display: block;
   position: relative;
+  margin: 0 auto;
   font-family: var(--font-default);
   color: var(--color-fonts);
   background-color: var(--color-bck);
   min-height: 100vh;
+  max-width: 768px;
 }
 
 a {
