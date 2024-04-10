@@ -127,7 +127,18 @@ main {
     position: relative;
 }
 
-.product-card img {
+.originFlag {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    object-fit: fill;
+    border-radius: 5px;
+}
+
+.product-card .productImage {
     width: 100%;
     min-height: 173.25px;
     max-height: 173.25px;
