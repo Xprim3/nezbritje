@@ -60,16 +60,21 @@ main {
 # Category Profile Section Styling
 --------------------------------------------------------------*/
 
+.cat-wrap {
+    padding: 5px 15px 10px 15px;
+    background-color: #fff;
+}
+
 .cat-container {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
+    width: auto;
     align-items: center;
     justify-content: start;
     background-color: #fff;
     overflow-x: auto;
     height: 90px;
-    padding: 5px 15px 10px 15px;
 }
 
 .cat-profile {
