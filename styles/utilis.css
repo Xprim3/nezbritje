@@ -17,3 +17,48 @@
 
 /* END of Search Input Styling */
 
+.quantity-control {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  max-width: 170px;
+}
+
+.quantity-control .quantity-btn {
+  border: none;
+  cursor: pointer;
+}
+
+.quantity-control .quantity-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.quantity-control input {
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.row-center {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: space-between;
+  padding: 0px 12px 10px 12px;
+}
+
+.row-center button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nbck {
+  background-color: #e0e0e0;
+
+}

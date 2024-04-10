@@ -135,6 +135,14 @@
               <strike>9.20</strike>
             </div>
           </div>
+          <div class="row-center">
+            <div class="quantity-control">
+              <button class="quantity-btn" onclick="decrement()"><span class="material-symbols-outlined footer-icon nbck">remove</span></button>
+              <input type="text" id="quantity" value="1">
+              <button class="quantity-btn" onclick="increment()"><span class="material-symbols-outlined footer-icon nbck">add</span></button>
+            </div>
+            <button><span class="material-symbols-outlined footer-icon">shopping_cart</span></button>
+          </div>
         </div>
 
         <div class="product-card">
@@ -288,6 +296,23 @@
         this.classList.add('selected');
       });
     }
+  </script>
+
+  <script>
+    function increment() {
+  var value = parseInt(document.getElementById('quantity').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('quantity').value = value;
+}
+
+function decrement() {
+  var value = parseInt(document.getElementById('quantity').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('quantity').value = value;
+}
   </script>
 
 

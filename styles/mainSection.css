@@ -114,7 +114,6 @@ main {
     border-radius: 10px;
     height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
     position: relative;
 }
 
@@ -135,7 +134,7 @@ main {
     top: 8px;
     right: 8px;
     object-fit: fill;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .product-card .productImage {
