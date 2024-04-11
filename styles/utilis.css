@@ -17,7 +17,8 @@
 
 /* END of Search Input Styling */
 
-/* CSS */
+/* add to cart and Quantity Styling  */
+
 .cart-button {
   display: flex;
   align-items: center;
@@ -89,3 +90,5 @@
   text-align: center;
   border: none;
 }
+
+/* End of add to cart and Quantity Styling  */
