@@ -17,3 +17,75 @@
 
 /* END of Search Input Styling */
 
+/* CSS */
+.cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.cart-btn {
+  width: 100%;
+  max-width: 110px;
+  background-color: var(--color-icons);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: clamp(30px, 5vw, 30px);
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart-btn:hover {
+  background-color: #45a049;
+}
+
+.quantity-controls {
+  display: none;
+  justify-content: space-between;
+}
+
+.quantity-btn {
+  display: flex;
+  width: clamp(30px, 5vw, 40px);
+  height: clamp(30px, 5vw, 30px);
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: none;
+  align-items: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.highCon {
+  background-color: var(--color-icons);
+  color: rgb(255, 255, 255);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.lowCon {
+  background-color: rgb(246, 137, 137);
+  color: rgb(255, 255, 255);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.quantity-btn:hover {
+  background-color: var(--color-icons);
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  border: none;
+}

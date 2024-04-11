@@ -136,6 +136,14 @@
               <strike>9.20</strike>
             </div>
           </div>
+          <div class="cart-button">
+            <button id="add-to-cart" class="cart-btn">Add to Cart</button>
+            <div id="quantity-controls" class="quantity-controls">
+              <button id="decrease" class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
+              <input type="number" id="quantity" value="1" class="quantity-input">
+              <button id="increase" class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
+            </div>
+          </div>
         </div>
 
         <div class="product-card">
@@ -150,6 +158,14 @@
             <div>
               <span>€3.99</span>
               <strike>5.20</strike>
+            </div>
+          </div>
+          <div class="cart-button">
+            <button id="add-to-cart" class="cart-btn">Add to Cart</button>
+            <div id="quantity-controls" class="quantity-controls">
+              <button id="decrease" class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
+              <input type="number" id="quantity" value="1" class="quantity-input">
+              <button id="increase" class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
             </div>
           </div>
         </div>
@@ -168,6 +184,14 @@
               <strike>3.20</strike>
             </div>
           </div>
+          <div class="cart-button">
+            <button id="add-to-cart" class="cart-btn">Add to Cart</button>
+            <div id="quantity-controls" class="quantity-controls">
+              <button id="decrease" class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
+              <input type="number" id="quantity" value="1" class="quantity-input">
+              <button id="increase" class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
+            </div>
+          </div>
         </div>
 
         <div class="product-card">
@@ -182,6 +206,14 @@
             <div>
               <span>€3.11</span>
               <strike>5.20</strike>
+            </div>
+          </div>
+          <div class="cart-button">
+            <button id="add-to-cart" class="cart-btn">Add to Cart</button>
+            <div id="quantity-controls" class="quantity-controls">
+              <button id="decrease" class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
+              <input type="number" id="quantity" value="1" class="quantity-input">
+              <button id="increase" class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
             </div>
           </div>
         </div>
@@ -214,6 +246,14 @@
             <div>
               <span>€2.39</span>
               <strike>4.20</strike>
+            </div>
+          </div>
+          <div class="cart-button">
+            <button id="add-to-cart" class="cart-btn">Add to Cart</button>
+            <div id="quantity-controls" class="quantity-controls">
+              <button id="decrease" class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
+              <input type="number" id="quantity" value="1" class="quantity-input">
+              <button id="increase" class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
             </div>
           </div>
         </div>
@@ -276,7 +316,28 @@
 
 
 
+  <script>
+    // JavaScript
+    document.getElementById('add-to-cart').addEventListener('click', function() {
+      this.style.display = 'none';
+      document.getElementById('quantity-controls').style.display = 'flex';
+    });
 
+    document.getElementById('increase').addEventListener('click', function() {
+      const quantity = document.getElementById('quantity');
+      quantity.value = parseInt(quantity.value) + 1;
+    });
+
+    document.getElementById('decrease').addEventListener('click', function() {
+      const quantity = document.getElementById('quantity');
+      if (quantity.value > 1) {
+        quantity.value = parseInt(quantity.value) - 1;
+      } else {
+        document.getElementById('add-to-cart').style.display = 'block';
+        document.getElementById('quantity-controls').style.display = 'none';
+      }
+    });
+  </script>
 
 
 
