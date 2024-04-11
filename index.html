@@ -137,13 +137,14 @@
             </div>
           </div>
           <div class="cart-button">
-            <button id="add-to-cart" class="cart-btn">Add to Cart</button>
-            <div id="quantity-controls" class="quantity-controls">
-              <button id="decrease" class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
-              <input type="number" id="quantity" value="1" class="quantity-input">
-              <button id="increase" class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
+            <button class="cart-btn">Add to Cart</button>
+            <div class="quantity-controls">
+              <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
+              <input type="number" class="quantity-input" value="1">
+              <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
             </div>
           </div>
+          
         </div>
 
         <div class="product-card">
@@ -232,6 +233,14 @@
               <strike>5.20</strike>
             </div>
           </div>
+          <div class="cart-button">
+            <button id="add-to-cart" class="cart-btn">Add to Cart</button>
+            <div id="quantity-controls" class="quantity-controls">
+              <button id="decrease" class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
+              <input type="number" id="quantity" value="1" class="quantity-input">
+              <button id="increase" class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
+            </div>
+          </div>
         </div>
 
         <div class="product-card">
@@ -315,29 +324,41 @@
 
 
 
-
+  <!-- Quantity and Add to cart Button Script -->
   <script>
-    // JavaScript
-    document.getElementById('add-to-cart').addEventListener('click', function() {
-      this.style.display = 'none';
-      document.getElementById('quantity-controls').style.display = 'flex';
+    document.querySelectorAll('.cart-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const parent = this.closest('.product-card');
+        const addToCartBtn = parent.querySelector('.cart-btn');
+        const quantityControls = parent.querySelector('.quantity-controls');
+
+        addToCartBtn.style.display = 'none';
+        quantityControls.style.display = 'flex';
+      });
     });
 
-    document.getElementById('increase').addEventListener('click', function() {
-      const quantity = document.getElementById('quantity');
-      quantity.value = parseInt(quantity.value) + 1;
-    });
+    document.querySelectorAll('.quantity-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const parent = this.closest('.product-card');
+        const quantityInput = parent.querySelector('.quantity-input');
+        const addToCartBtn = parent.querySelector('.cart-btn');
+        const quantityControls = parent.querySelector('.quantity-controls');
 
-    document.getElementById('decrease').addEventListener('click', function() {
-      const quantity = document.getElementById('quantity');
-      if (quantity.value > 1) {
-        quantity.value = parseInt(quantity.value) - 1;
-      } else {
-        document.getElementById('add-to-cart').style.display = 'block';
-        document.getElementById('quantity-controls').style.display = 'none';
-      }
+        if (btn.classList.contains('highCon')) {
+          quantityInput.value = parseInt(quantityInput.value) + 1;
+        } else {
+          if (quantityInput.value > 1) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+          } else {
+            addToCartBtn.style.display = 'block';
+            quantityControls.style.display = 'none';
+          }
+        }
+      });
     });
   </script>
+
+    <!-- End of  Quantity and Add to cart Button Script -->
 
 
 
