@@ -50,9 +50,11 @@
 
 @keyframes slideIn {
   from {
+    filter: blur(8px);
     top: 100%; /* Start position off-screen */
   }
   to {
+    filter: blur(0);
     top: 50%; /* Slide in to the center */
   }
 }
