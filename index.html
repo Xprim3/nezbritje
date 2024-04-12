@@ -123,7 +123,7 @@
       <section class="main-productGrid">
 
         <div class="product-card">
-        <div id="openModal">
+        <div id="openModalBtn">
           <div class="prod-img-box">
             <img class="originFlag" src="/icons/greece.png" alt="">
             <img class="productImage" src="/images/1.png" alt="">
@@ -312,15 +312,19 @@
 
 <!-- End of Footer Section  -->
 
-    
+  
 
 
 
 
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>This is the modal content.</p>
+
+<div id="modalBackdrop"></div>
+
+<div id="modal">
+  <div id="modalContent">
+    <h2>Modal Content</h2>
+    <p>This is the content of the modal.</p>
+    <button id="closeModalBtn">Close</button>
   </div>
 </div>
 
@@ -328,52 +332,30 @@
 
 
 
+
+
   <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+const openModalBtn = document.getElementById('openModalBtn');
+const closeModalBtn = document.getElementById('closeModalBtn');
+const modalBackdrop = document.getElementById('modalBackdrop');
+const modal = document.getElementById('modal');
+const body = document.body;
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("openModal");
+openModalBtn.addEventListener('click', () => {
+  modalBackdrop.classList.add('show');
+  modal.classList.add('show');
+  body.style.overflow = 'hidden'; // Prevent scrolling on the body
+});
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+closeModalBtn.addEventListener('click', () => {
+  modalBackdrop.classList.remove('show');
+  modal.classList.remove('show');
+  body.style.overflow = 'auto'; // Allow scrolling on the body
+});
 
-    // Function to open the modal
-    function openModal() {
-      modal.style.display = "flex";
-      setTimeout(function() {
-        modal.style.bottom = "0"; // Slide the modal to the middle
-      }, 100);
-      document.body.style.overflow = "hidden"; // Freeze background
-    }
-
-    // Function to close the modal
-    function closeModal() {
-      modal.style.bottom = "-100%"; // Slide the modal back down
-      setTimeout(function() {
-        modal.style.display = "none";
-      }, 100); // Same duration as the transition
-      document.body.style.overflow = "auto"; // Unfreeze background
-    }
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function() {
-      openModal();
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      closeModal();
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        closeModal();
-      }
-    }
 
   </script>
+
 
   <!-- Quantity and Add to cart Button Script -->
   <script>
