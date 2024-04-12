@@ -1,3 +1,15 @@
+/*
+* Website Designed by Denis Januzi
+* Created: April 1 2024
+* Contact Address: denisjanuzi@gmail.com (+38349106068)
+* Author: Denis Januzi
+* License: denis.cilesi.com
+*/
+
+/*--------------------------------------------------------------
+# Modal Base Script and Styling
+--------------------------------------------------------------*/
+
 #modalBackdrop {
   display: none;
   position: fixed;
@@ -40,10 +52,12 @@
   from {
     transform: translate(-50%, -50%) translateY(100%);
     opacity: 0;
+    filter: blur(5px);
   }
   to {
     transform: translate(-50%, -50%);
     opacity: 1;
+    filter: blur(0);
   }
 }
 
@@ -60,3 +74,17 @@
     opacity: 1;
   }
 }
+
+/*--------------------------------------------------------------
+# End of Modal Base Script and Styling
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Site Modals
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# End of Modal Base Script and Styling
+--------------------------------------------------------------*/
