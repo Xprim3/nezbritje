@@ -333,28 +333,28 @@
 
 
 
-
+<!-- Modal Open and Closing Script with Transition -->
   <script>
-const openModalBtn = document.getElementById('openModalBtn');
-const closeModalBtn = document.getElementById('closeModalBtn');
-const modalBackdrop = document.getElementById('modalBackdrop');
-const modal = document.getElementById('modal');
-const body = document.body;
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const modal = document.getElementById('modal');
+    const body = document.body;
 
-openModalBtn.addEventListener('click', () => {
-  modalBackdrop.classList.add('show');
-  modal.classList.add('show');
-  body.style.overflow = 'hidden'; // Prevent scrolling on the body
-});
+    openModalBtn.addEventListener('click', () => {
+      modalBackdrop.classList.add('show');
+      modal.classList.add('show');
+      body.style.overflow = 'hidden'; // Prevent scrolling on the body
+    });
 
-closeModalBtn.addEventListener('click', () => {
-  modalBackdrop.classList.remove('show');
-  modal.classList.remove('show');
-  body.style.overflow = 'auto'; // Allow scrolling on the body
-});
-
-
+    closeModalBtn.addEventListener('click', () => {
+      modalBackdrop.classList.remove('show');
+      modal.classList.remove('show');
+      body.style.overflow = 'auto'; // Allow scrolling on the body
+    });
   </script>
+
+  <!-- End of Modal Open and Closing Script with Transition -->
 
 
   <!-- Quantity and Add to cart Button Script -->
