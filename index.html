@@ -359,32 +359,27 @@
 <!-- Modal Open and Closing Script with Transition -->
   <script>
     const openModalBtns = document.querySelectorAll('#openModalBtn');
-const closeModalBtn = document.getElementById('closeModalBtn');
-const modalBackdrop = document.getElementById('modalBackdrop');
-const modal = document.getElementById('modal');
-const body = document.body;
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const modal = document.getElementById('modal');
+    const body = document.body;
 
-// Function to open modal
-function openModal() {
-  modalBackdrop.classList.add('show');
-  modal.classList.add('show');
-  body.style.overflow = 'hidden';
-}
+    function openModal() {
+      modalBackdrop.classList.add('show');
+      modal.classList.add('show');
+      body.style.overflow = 'hidden';
+    }
 
-// Function to close modal
-function closeModal() {
-  modalBackdrop.classList.remove('show');
-  modal.classList.remove('show');
-  body.style.overflow = 'auto';
-}
+    function closeModal() {
+      modalBackdrop.classList.remove('show');
+      modal.classList.remove('show');
+      body.style.overflow = 'auto';
+    }
+    openModalBtns.forEach(btn => {
+      btn.addEventListener('click', openModal);
+    });
 
-// Add event listeners to open modal buttons
-openModalBtns.forEach(btn => {
-  btn.addEventListener('click', openModal);
-});
-
-// Add event listener to close modal button
-closeModalBtn.addEventListener('click', closeModal);
+    closeModalBtn.addEventListener('click', closeModal);
 
   </script>
   <!-- End of Modal Open and Closing Script with Transition -->
