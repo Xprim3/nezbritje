@@ -18,8 +18,10 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--color-header);
   padding: 10px 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 header button {

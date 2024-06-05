@@ -17,8 +17,8 @@
 /* Colors */
 :root {
   --color-font:rgb(34, 34, 34);
-  --color-icons: rgb(255, 71, 46);
-  --color-header:rgb(255, 255, 255);
+  --color-icons: rgb(255, 255, 255);
+  --color-header:#139755;
 
   --color-bck: rgb(241, 242, 244);
 }
@@ -46,6 +46,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 a {
