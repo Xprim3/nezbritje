@@ -1,0 +1,28 @@
+/*
+* Website Designed by Denis Januzi
+* Created: April 1 2024
+* Contact Address: denisjanuzi@gmail.com (+38349106068)
+* Author: Denis Januzi
+* License: denis.cilesi.com
+*/
+
+/*--------------------------------------------------------------
+# Controls Section Styling
+--------------------------------------------------------------*/
+
+/* Flex Align Center */
+
+.flex-alg-center {
+  display: flex;
+  align-items: center;
+}
+
+/* End of Flex Align Center */
+
+/* Admin Panel Hidden */
+
+.admin-panel {
+  display: flex;
+}
+
+/* End of Admin Panel Hidden */

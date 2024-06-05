@@ -6,3 +6,4 @@ import '../styles/mainSection.css';
 import '../styles/bottomNav.css';
 
 import '../styles/userModal.css';
+import '../styles/controls.css';
