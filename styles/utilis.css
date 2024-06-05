@@ -68,8 +68,8 @@
 }
 
 .highCon {
-  background-color: var(--color-icons);
-  color: rgb(255, 255, 255);
+  background-color: var(--color-bck);
+  color: var(--color-font);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
