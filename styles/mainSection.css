@@ -13,9 +13,8 @@
 main {
     display: flex;
     flex-direction: column;
-    min-height: 700px;
-
-    background-color: #f0f0f0;
+    flex: 1;
+    padding-bottom: 40px;
 }
 
 /*--------------------------------------------------------------
@@ -98,7 +97,6 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
     padding: 20px 15px;
     gap: 15px;
-    height: auto;
 }
 
 @media screen and (min-width: 568px) {
