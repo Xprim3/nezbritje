@@ -54,18 +54,16 @@
 --------------------------------------------------------------*/
 
 .modal1 {
-  width: 80vw;
+  width: 100vw;
   max-width: 768px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 .modal1.show {
   display: block;
-  animation: slideIn 0.3s forwards, fadeIn 0.3s forwards;
+  animation: slideIn 0.2s forwards, fadeIn 0.2s forwards;
 }
 
 /* User Modal Animation */
@@ -75,7 +73,7 @@
     top: 100%;
   }
   to {
-    top: 50%;
+    top: 0%;
   }
 }
 
@@ -97,7 +95,7 @@
 --------------------------------------------------------------*/
 
 .modal2 {
-  width: 80vw;
+  width: 85vw;
   max-width: 600px;
   left: 50%;
   top: 50%;
@@ -109,7 +107,7 @@
 
 .modal2.show {
   display: block;
-  animation: fadeIn2 0.3s forwards, slideIn2 0.3s forwards;
+  animation: fadeIn2 0.2s forwards, slideIn2 0.2s forwards;
 }
 
 
