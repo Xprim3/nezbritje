@@ -35,11 +35,11 @@
     <!--  Header  -->
 
     <header>
-      <button><span class="material-symbols-outlined footer-icon btn-pad">notifications</span></button>
+      <button><span class="material-symbols-outlined footer-icon btn-pad open-modal-btn" data-target="#modal6">notifications</span></button>
       <span style="color: #fff;">Ne Zbritje!</span>
       <div class="flex-alg-center">
-        <button><span class="material-symbols-outlined footer-icon btn-pad">shopping_cart</span></button>
-        <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad">account_circle</span></button>
+        <button><span class="material-symbols-outlined footer-icon btn-pad open-modal-btn" data-target="#modal4">shopping_cart</span></button>
+        <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad open-modal-btn" data-target="#modal9">account_circle</span></button>
       </div>
     </header>
 
@@ -53,7 +53,7 @@
         <div class="search-container">
           <input type="search" placeholder="Search Here...">
         </div>
-        <button style="background-color: var(--color-button);border-radius: 5px;"><span class="material-symbols-outlined footer-icon btn-pad">filter_list</span></button>
+        <button class="open-modal-btn" style="background-color: var(--color-button);border-radius: 5px;" data-target="#modal8" ><span class="material-symbols-outlined footer-icon btn-pad">filter_list</span></button>
       </section>
 
       <!--  Profile Store Section  -->
@@ -118,7 +118,7 @@
 
       <!-- End of Profile Store Section -->
 
-      <div class="addProductBtn admin-panel">
+      <div class="addProductBtn admin-panel open-modal-btn" data-target="#modal7">
         <span class="material-symbols-outlined">add_circle</span>
         <button>Add Product</button>
       </div>
@@ -132,8 +132,10 @@
             <img class="productImage" src="/images/1.png" alt="Proudct Image">
             <div class="discount-label">-14%</div>
             <!-- Admin Edit Button -->
-            <button class="admin-panel deleteBtn"><span class="material-symbols-outlined">delete</span></button>
-            <button class="admin-panel editBtn"><span class="material-symbols-outlined">edit</span></button>
+            <div>
+              <button class="admin-panel deleteBtn open-modal-btn" data-target="#modal3"><span class="material-symbols-outlined">delete</span></button>
+              <button class="admin-panel editBtn open-modal-btn" data-target="#modal2"><span class="material-symbols-outlined">edit</span></button>
+            </div>
           </div>
           <div class="product-info">
             <p>Deri me 25/05/1989</p>
@@ -153,162 +155,6 @@
             </div>
           </div>
         </div>
-
-        <div class="product-card">
-          <div class="open-modal-btn" data-target="#modal2">
-            <div class="prod-img-box">
-              <img class="originFlag" src="/icons/greece.png" alt="">
-              <img class="productImage" src="/images/1.png" alt="">
-              <div class="discount-label">-14%</div>
-            </div>
-            <div class="product-info">
-              <p>Deri me 25/05/1989</p>
-              <h5>Olympus Jogurt Grek 0% Yndyrë 12/150gr</h5>
-              <div>
-                <span>€3.99</span>
-                <strike>9.20</strike>
-              </div>
-            </div>
-          </div>
-            <div class="cart-button">
-              <button class="cart-btn">Add to Cart</button>
-              <div class="quantity-controls">
-                <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
-                <input type="number" class="quantity-input" value="1" readonly>
-                <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div id="openModalBtn">
-              <div class="prod-img-box">
-                <img class="originFlag" src="/icons/greece.png" alt="">
-                <img class="productImage" src="/images/1.png" alt="">
-                <div class="discount-label">-14%</div>
-              </div>
-              <div class="product-info">
-                <p>Deri me 25/05/1989</p>
-                <h5>Olympus Jogurt Grek 0% Yndyrë 12/150gr</h5>
-                <div>
-                  <span>€3.99</span>
-                  <strike>9.20</strike>
-                </div>
-              </div>
-            </div>
-              <div class="cart-button">
-                <button class="cart-btn">Add to Cart</button>
-                <div class="quantity-controls">
-                  <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
-                  <input type="number" class="quantity-input" value="1" readonly>
-                  <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <div id="openModalBtn">
-                <div class="prod-img-box">
-                  <img class="originFlag" src="/icons/greece.png" alt="">
-                  <img class="productImage" src="/images/1.png" alt="">
-                  <div class="discount-label">-14%</div>
-                </div>
-                <div class="product-info">
-                  <p>Deri me 25/05/1989</p>
-                  <h5>Olympus Jogurt Grek 0% Yndyrë 12/150gr</h5>
-                  <div>
-                    <span>€3.99</span>
-                    <strike>9.20</strike>
-                  </div>
-                </div>
-              </div>
-                <div class="cart-button">
-                  <button class="cart-btn">Add to Cart</button>
-                  <div class="quantity-controls">
-                    <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
-                    <input type="number" class="quantity-input" value="1" readonly>
-                    <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="product-card">
-                <div id="openModalBtn">
-                  <div class="prod-img-box">
-                    <img class="originFlag" src="/icons/greece.png" alt="">
-                    <img class="productImage" src="/images/1.png" alt="">
-                    <div class="discount-label">-14%</div>
-                  </div>
-                  <div class="product-info">
-                    <p>Deri me 25/05/1989</p>
-                    <h5>Olympus Jogurt Grek 0% Yndyrë 12/150gr</h5>
-                    <div>
-                      <span>€3.99</span>
-                      <strike>9.20</strike>
-                    </div>
-                  </div>
-                </div>
-                  <div class="cart-button">
-                    <button class="cart-btn">Add to Cart</button>
-                    <div class="quantity-controls">
-                      <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
-                      <input type="number" class="quantity-input" value="1" readonly>
-                      <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="product-card">
-                  <div id="openModalBtn">
-                    <div class="prod-img-box">
-                      <img class="originFlag" src="/icons/greece.png" alt="">
-                      <img class="productImage" src="/images/1.png" alt="">
-                      <div class="discount-label">-14%</div>
-                    </div>
-                    <div class="product-info">
-                      <p>Deri me 25/05/1989</p>
-                      <h5>Olympus Jogurt Grek 0% Yndyrë 12/150gr</h5>
-                      <div>
-                        <span>€3.99</span>
-                        <strike>9.20</strike>
-                      </div>
-                    </div>
-                  </div>
-                    <div class="cart-button">
-                      <button class="cart-btn">Add to Cart</button>
-                      <div class="quantity-controls">
-                        <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
-                        <input type="number" class="quantity-input" value="1" readonly>
-                        <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="product-card">
-                    <div id="openModalBtn">
-                      <div class="prod-img-box">
-                        <img class="originFlag" src="/icons/greece.png" alt="">
-                        <img class="productImage" src="/images/1.png" alt="">
-                        <div class="discount-label">-14%</div>
-                      </div>
-                      <div class="product-info">
-                        <p>Deri me 25/05/1989</p>
-                        <h5>Olympus Jogurt Grek 0% Yndyrë 12/150gr</h5>
-                        <div>
-                          <span>€3.99</span>
-                          <strike>9.20</strike>
-                        </div>
-                      </div>
-                    </div>
-                      <div class="cart-button">
-                        <button class="cart-btn">Add to Cart</button>
-                        <div class="quantity-controls">
-                          <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
-                          <input type="number" class="quantity-input" value="1" readonly>
-                          <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
-                        </div>
-                      </div>
-                    </div>
 
 
 
@@ -362,8 +208,8 @@
 
 <div id="modal1" class="modal modal1">
   <div class="modal-content">
-    <h2>Modal Content</h2>
-    <p>This is the content of the modal.</p>
+    <h2>Modal Content 333333</h2>
+    <p>Kjo osht produkti</p>
     <button class="close-modal-btn">Close</button>
   </div>
 </div>
@@ -374,29 +220,85 @@
 
 <div id="modal2" class="modal modal2">
   <div class="modal-content">
-    <h2>Modal Content 2</h2>
-    <p>This is the content of the second modal.</p>
+    <h2>Edit Modal</h2>
     <button class="close-modal-btn">Close</button>
   </div>
 </div>
 
 <!-- End of Admin Edit Button Modal -->
 
+<!-- Admin Delete Product Button Modal -->
+
+<div id="modal3" class="modal modal2">
+  <div class="modal-content">
+    <h2>Delete Modal</h2>
+    <button class="close-modal-btn">Close</button>
+  </div>
+</div>
+
+<!-- End of Admin Delete Product Button Modal -->
+
+<!-- Cart Modal Styling  -->
+
+<div id="modal4" class="modal modal1">
+  <div class="modal-content">
+    <h2>Cart Modal</h2>
+    <button class="close-modal-btn">Close</button>
+  </div>
+</div>
+<!-- End of Cart Modal Styling -->
+
+<!-- Notifications Modal Styling  -->
+
+<div id="modal6" class="modal modal2">
+  <div class="modal-content">
+    <h2>Notifications Modal</h2>
+    <button class="close-modal-btn">Close</button>
+  </div>
+</div>
+<!-- End of Notifications Modal Styling -->
+
+<!-- Add Product Modal Styling  -->
+
+<div id="modal7" class="modal modal2">
+  <div class="modal-content">
+    <h2>Add Product</h2>
+    <button class="close-modal-btn">Close</button>
+  </div>
+</div>
+<!-- End of  Add Product Modal Styling  -->
+
+<!-- Filter Modal Styling  -->
+
+<div id="modal8" class="modal modal1">
+  <div class="modal-content">
+    <h2>Filter Modal</h2>
+    <button class="close-modal-btn">Close</button>
+  </div>
+</div>
+<!-- End of Filter Modal Styling  -->
+
+<!-- Admin Panel  Modal Styling  -->
+
+<div id="modal9" class="modal modal1">
+  <div class="modal-content">
+    <h2>Admin Panel Modal</h2>
+    <button class="close-modal-btn">Close</button>
+  </div>
+</div>
+<!-- End of Admin Panel Modal Styling  -->
 
 
 
 
 
 
-
-<!---------------- End of Modal Structures Section ---------------->
-
+<!---------------- Modal Structures Section ---------------->
 
 
 
 
-
-  <!-- Modal Open and Closing Script with Transition -->
+<!-- Modal Open and Closing Script with Transition -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
     const openModalBtns = document.querySelectorAll('.open-modal-btn');

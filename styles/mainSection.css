@@ -133,6 +133,7 @@ main {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    pointer-events: auto;
 }
 
 .editBtn {
