@@ -10,7 +10,7 @@
 # User Action Modal Base Script and Styling
 --------------------------------------------------------------*/
 
-#modalBackdrop {
+.modal-backdrop {
   display: none;
   position: fixed;
   top: 0;
@@ -22,39 +22,60 @@
   backdrop-filter: blur(8px);
 }
 
-#modal {
+.modal,
+.modal1,
+.modal2 {
   display: none;
   position: fixed;
-  width: 80vw;
-  max-width: 768px;
-  bottom: 0; /* Position at the bottom of the viewport */
-  left: 50%;
-  transform: translateX(-50%);
   background-color: #fff;
   padding: 20px;
-  border-radius: 5px;
   z-index: 2;
 }
 
+.modal {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-#modalContent {
+.modal-content {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
 }
 
-#modal.show {
-  display: block;
-  animation: slideIn 0.3s forwards, fadeIn 0.3s forwards; /* Apply both slide and fade animation */
+/*--------------------------------------------------------------
+# End of User Action Modal Base Script and Styling
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# User Action Modal Styling
+--------------------------------------------------------------*/
+
+.modal1 {
+  width: 80vw;
+  max-width: 768px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
+
+.modal1.show {
+  display: block;
+  animation: slideIn 0.3s forwards, fadeIn 0.3s forwards;
+}
+
+/* User Modal Animation */
 
 @keyframes slideIn {
   from {
-    top: 100%; /* Start position off-screen */
+    top: 100%;
   }
   to {
-    top: 50%; /* Slide in to the center */
+    top: 50%;
   }
 }
 
@@ -67,21 +88,59 @@
   }
 }
 
-#modalBackdrop.show {
+/*--------------------------------------------------------------
+# End of User Action Modal Styling
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Admin Action Modal Styling
+--------------------------------------------------------------*/
+
+.modal2 {
+  width: 80vw;
+  max-width: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal2.show {
   display: block;
+  animation: fadeIn2 0.3s forwards, slideIn2 0.3s forwards;
 }
 
 
+/* Admin Modal Animation */
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn2 {
+  from {
+    transform: translate(-50%, -60%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*--------------------------------------------------------------
+# End of Admin Action Modal Styling
+--------------------------------------------------------------*/
+
+.modal-backdrop.show {
+  display: block;
+}
+
 /*--------------------------------------------------------------
 # End of Modal Base Script and Styling
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Admin Action Modal Base Script and Styling
---------------------------------------------------------------*/
-
-
-
-/*--------------------------------------------------------------
-# End of Admin Action Modal Base Script and Styling
 --------------------------------------------------------------*/

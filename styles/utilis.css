@@ -81,10 +81,6 @@
   border-bottom-left-radius: 5px;
 }
 
-.quantity-btn:hover {
-  background-color: var(--color-icons);
-}
-
 .quantity-input {
   width: 50px;
   text-align: center;

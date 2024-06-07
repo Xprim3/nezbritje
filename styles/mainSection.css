@@ -124,12 +124,34 @@ main {
     position: relative;
 }
 
+.deleteBtn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    background-color: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.editBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 .originFlag {
     display: block;
     width: 30px;
     height: 20px;
     position: absolute;
-    top: 8px;
+    bottom: 8px;
     left: 8px;
     object-fit: fill;
     border-radius: 3px;
@@ -190,7 +212,7 @@ main {
     font-weight: bold;
     border-radius: 5px;
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     right: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* larger drop shadow */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* text shadow for better readability */

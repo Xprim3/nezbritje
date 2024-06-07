@@ -126,11 +126,14 @@
       <section class="main-productGrid">
 
         <div class="product-card">
-        <div id="openModalBtn">
+        <div class="open-modal-btn" data-target="#modal1">
           <div class="prod-img-box">
-            <img class="originFlag" src="/icons/greece.png" alt="">
-            <img class="productImage" src="/images/1.png" alt="">
+            <img class="originFlag" src="/icons/greece.png" alt="Origin Flag Icon">
+            <img class="productImage" src="/images/1.png" alt="Proudct Image">
             <div class="discount-label">-14%</div>
+            <!-- Admin Edit Button -->
+            <button class="admin-panel deleteBtn"><span class="material-symbols-outlined">delete</span></button>
+            <button class="admin-panel editBtn"><span class="material-symbols-outlined">edit</span></button>
           </div>
           <div class="product-info">
             <p>Deri me 25/05/1989</p>
@@ -152,7 +155,7 @@
         </div>
 
         <div class="product-card">
-          <div id="openModalBtn">
+          <div class="open-modal-btn" data-target="#modal2">
             <div class="prod-img-box">
               <img class="originFlag" src="/icons/greece.png" alt="">
               <img class="productImage" src="/images/1.png" alt="">
@@ -355,17 +358,29 @@
 
 <!-- Product Modal Styling -->
 
-<div id="modalBackdrop"></div>
+<div id="modalBackdrop" class="modal-backdrop"></div>
 
-<div id="modal">
-  <div id="modalContent">
+<div id="modal1" class="modal modal1">
+  <div class="modal-content">
     <h2>Modal Content</h2>
     <p>This is the content of the modal.</p>
-    <button id="closeModalBtn">Close</button>
+    <button class="close-modal-btn">Close</button>
   </div>
 </div>
 
 <!-- End of Product Modal Styling -->
+
+<!-- Admin Edit Button Modal -->
+
+<div id="modal2" class="modal modal2">
+  <div class="modal-content">
+    <h2>Modal Content 2</h2>
+    <p>This is the content of the second modal.</p>
+    <button class="close-modal-btn">Close</button>
+  </div>
+</div>
+
+<!-- End of Admin Edit Button Modal -->
 
 
 
@@ -381,30 +396,42 @@
 
 
 
-<!-- Modal Open and Closing Script with Transition -->
+  <!-- Modal Open and Closing Script with Transition -->
   <script>
-    const openModalBtns = document.querySelectorAll('#openModalBtn');
-    const closeModalBtn = document.getElementById('closeModalBtn');
-    const modalBackdrop = document.getElementById('modalBackdrop');
-    const modal = document.getElementById('modal');
+    document.addEventListener('DOMContentLoaded', () => {
+    const openModalBtns = document.querySelectorAll('.open-modal-btn');
+    const closeModalBtns = document.querySelectorAll('.close-modal-btn');
     const body = document.body;
 
-    function openModal() {
-      modalBackdrop.classList.add('show');
+    function openModal(modal, backdrop) {
+      backdrop.classList.add('show');
       modal.classList.add('show');
       body.style.overflow = 'hidden';
     }
 
-    function closeModal() {
-      modalBackdrop.classList.remove('show');
+    function closeModal(modal, backdrop) {
+      backdrop.classList.remove('show');
       modal.classList.remove('show');
       body.style.overflow = 'auto';
     }
+
     openModalBtns.forEach(btn => {
-      btn.addEventListener('click', openModal);
+      btn.addEventListener('click', function() {
+        const modalSelector = this.getAttribute('data-target');
+        const modal = document.querySelector(modalSelector);
+        const backdrop = document.querySelector('.modal-backdrop');
+        openModal(modal, backdrop);
+      });
     });
 
-    closeModalBtn.addEventListener('click', closeModal);
+    closeModalBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const modal = this.closest('.modal');
+        const backdrop = document.querySelector('.modal-backdrop');
+        closeModal(modal, backdrop);
+      });
+    });
+  });
 
   </script>
   <!-- End of Modal Open and Closing Script with Transition -->
