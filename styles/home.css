@@ -1,21 +1,17 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  margin: 0 auto;
 }
 
 .slider-container {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
 }
 
 .slider-container img {
@@ -44,7 +40,7 @@ body {
 
 .dots-container {
   position: absolute;
-  bottom: 40px;
+  bottom: 32px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -53,35 +49,13 @@ body {
 }
 
 .dots-container .dot {
-  width: 14px; /* Increased size */
-  height: 14px; /* Increased size */
-  background-color: transparent;
-  border: 1px solid rgb(122, 122, 122); 
+  width: 10px;
+  height: 10px;
+  background-color: rgb(199, 199, 199);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .dots-container .dot.active {
   background-color: red;
-}
-
-
-/* Visitor Button Styling */
-
-.visitorBtn {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  z-index: 1;
-
-}
-
-.visitorBtn button {
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: clamp(1.3rem, 1.5vw, 1.6rem);
-  cursor: pointer;
-  padding: 8px 15px;
 }
