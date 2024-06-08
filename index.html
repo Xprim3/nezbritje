@@ -384,12 +384,19 @@
     const buttonsContainer = document.getElementById('buttonsContainer');
     const toggleButton = document.getElementById('toggleButton');
 
-    toggleButton.addEventListener('click', () => {
+    toggleButton.addEventListener('click', (event) => {
       buttonsContainer.classList.toggle('open');
+      event.stopPropagation(); // Prevent click from propagating to the document
     });
 
     window.addEventListener('scroll', () => {
       if (buttonsContainer.classList.contains('open')) {
+        buttonsContainer.classList.remove('open');
+      }
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!buttonsContainer.contains(event.target) && !toggleButton.contains(event.target)) {
         buttonsContainer.classList.remove('open');
       }
     });
