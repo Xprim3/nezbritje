@@ -40,7 +40,7 @@ body {
 
 .dots-container {
   position: absolute;
-  bottom: 40px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
