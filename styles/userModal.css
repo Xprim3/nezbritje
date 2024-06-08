@@ -70,7 +70,7 @@
 
 @keyframes slideIn {
   from {
-    top: 100%;
+    left: 100%;
   }
   to {
     top: 0%;
