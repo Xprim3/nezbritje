@@ -40,17 +40,19 @@ body {
 
 .dots-container {
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
+  z-index: 1;
 }
 
 .dots-container .dot {
-  width: 10px;
-  height: 10px;
-  background-color: white;
+  width: 14px; /* Increased size */
+  height: 14px; /* Increased size */
+  background-color: transparent;
+  border: 1px solid rgb(122, 122, 122); /* Added border */
   border-radius: 50%;
   cursor: pointer;
 }
