@@ -55,44 +55,16 @@
 
 .modal1 {
   width: 100vw;
-  max-width: 768px;
-  bottom: 0;
+  height: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
 }
 
 .modal1.show {
   display: block;
-  animation: slideIn 0.2s forwards, fadeIn 0.2s forwards;
-}
-
-/* User Modal Animation */
-
-@keyframes slideIn {
-  from {
-    left: 100%;
-  }
-  to {
-    top: 0%;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes blurIn {
-  from {
-    backdrop-filter: blur(0px);
-  }
-  to {
-    backdrop-filter: blur(8px);
-  }
+  animation: fadeIn2 0.2s forwards, slideIn2 0.2s forwards;
 }
 
 /*--------------------------------------------------------------
