@@ -164,6 +164,14 @@ textarea {
   margin: 0; /* 2 */
 }
 
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+
+}
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -187,6 +195,13 @@ select { /* 1 */
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -275,6 +290,11 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
