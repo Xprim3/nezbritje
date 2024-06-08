@@ -71,10 +71,6 @@ h6 {
   font-family: var(--font-primary);
 }
 
-button {
-  touch-action: manipulation;
-}
-
 /* Google Icons */
 
 .material-symbols-outlined {
