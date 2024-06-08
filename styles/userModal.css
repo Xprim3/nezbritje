@@ -54,17 +54,38 @@
 --------------------------------------------------------------*/
 
 .modal1 {
-  width: 100vw;
-  height: 100%;
+  width: 80vw;
+  max-width: 768px;
+  bottom: 0;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
+  transform: translateX(-50%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .modal1.show {
   display: block;
-  animation: fadeIn2 0.2s forwards, slideIn2 0.2s forwards;
+  animation: slideIn 0.3s forwards, fadeIn 0.3s forwards;
+}
+
+/* User Modal Animation */
+
+@keyframes slideIn {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -76,7 +97,7 @@
 --------------------------------------------------------------*/
 
 .modal2 {
-  width: 85vw;
+  width: 80vw;
   max-width: 600px;
   left: 50%;
   top: 50%;
@@ -88,7 +109,7 @@
 
 .modal2.show {
   display: block;
-  animation: fadeIn2 0.2s forwards, slideIn2 0.2s forwards;
+  animation: fadeIn2 0.3s forwards, slideIn2 0.3s forwards;
 }
 
 
@@ -122,4 +143,14 @@
 
 /*--------------------------------------------------------------
 # End of Modal Base Script and Styling
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Admin Action Modal Base Script and Styling
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# End of Admin Action Modal Base Script and Styling
 --------------------------------------------------------------*/
