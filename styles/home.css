@@ -40,7 +40,7 @@ body {
 
 .dots-container {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -66,8 +66,8 @@ body {
 
 .visitorBtn {
   position: absolute;
-  right: 40px;
-  top: 30px;
+  right: 30px;
+  top: 60px;
   z-index: 1;
 
 }
