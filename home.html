@@ -9,6 +9,9 @@
 
 
   <div class="slider-container">
+    <div class="visitorBtn">
+      <span>Vazhdo si Visitor</span>
+    </div>
     <img src="/images/1.jpeg" alt="">
     <img src="/images/2.jpeg" alt="">
     <img src="/images/3.jpeg" alt="">
@@ -30,97 +33,97 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-  const images = document.querySelectorAll('.slider-container img');
-  const dotsContainer = document.querySelector('.dots-container');
-  let currentIndex = 0;
-  const intervalTime = 10000;
+    const images = document.querySelectorAll('.slider-container img');
+    const dotsContainer = document.querySelector('.dots-container');
+    let currentIndex = 0;
+    const intervalTime = 10000;
 
-  images[currentIndex].classList.add('active');
-
-  images.forEach((image, index) => {
-    const dot = document.createElement('div');
-    dot.classList.add('dot');
-    if (index === currentIndex) {
-      dot.classList.add('active');
-    }
-    dot.addEventListener('click', () => {
-      changeImage(index);
-    });
-    dotsContainer.appendChild(dot);
-  });
-
-  function changeImage(index) {
-    images[currentIndex].classList.remove('active');
-    dotsContainer.children[currentIndex].classList.remove('active');
-    currentIndex = index;
     images[currentIndex].classList.add('active');
-    dotsContainer.children[currentIndex].classList.add('active');
-  }
 
-  function nextImage() {
-    let nextIndex = (currentIndex + 1) % images.length;
-    changeImage(nextIndex);
-  }
+    images.forEach((image, index) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (index === currentIndex) {
+        dot.classList.add('active');
+      }
+      dot.addEventListener('click', () => {
+        changeImage(index);
+      });
+      dotsContainer.appendChild(dot);
+    });
 
-  let sliderInterval = setInterval(nextImage, intervalTime);
-
-  function resetInterval() {
-    clearInterval(sliderInterval);
-    sliderInterval = setInterval(nextImage, intervalTime);
-  }
-
-  // Swipe functionality
-  let startX;
-
-  function handleTouchStart(event) {
-    startX = event.touches[0].clientX;
-  }
-
-  function handleTouchEnd(event) {
-    if (!startX) return;
-
-    const endX = event.changedTouches[0].clientX;
-    const diffX = startX - endX;
-
-    if (diffX > 50) {
-      nextImage();
-      resetInterval();
-    } else if (diffX < -50) {
-      let prevIndex = (currentIndex - 1 + images.length) % images.length;
-      changeImage(prevIndex);
-      resetInterval();
+    function changeImage(index) {
+      images[currentIndex].classList.remove('active');
+      dotsContainer.children[currentIndex].classList.remove('active');
+      currentIndex = index;
+      images[currentIndex].classList.add('active');
+      dotsContainer.children[currentIndex].classList.add('active');
     }
 
-    startX = null;
-  }
-
-  function handleMouseDown(event) {
-    startX = event.clientX;
-  }
-
-  function handleMouseUp(event) {
-    if (!startX) return;
-
-    const endX = event.clientX;
-    const diffX = startX - endX;
-
-    if (diffX > 50) {
-      nextImage();
-      resetInterval();
-    } else if (diffX < -50) {
-      let prevIndex = (currentIndex - 1 + images.length) % images.length;
-      changeImage(prevIndex);
-      resetInterval();
+    function nextImage() {
+      let nextIndex = (currentIndex + 1) % images.length;
+      changeImage(nextIndex);
     }
 
-    startX = null;
-  }
+    let sliderInterval = setInterval(nextImage, intervalTime);
 
-  document.querySelector('.slider-container').addEventListener('touchstart', handleTouchStart);
-  document.querySelector('.slider-container').addEventListener('touchend', handleTouchEnd);
-  document.querySelector('.slider-container').addEventListener('mousedown', handleMouseDown);
-  document.querySelector('.slider-container').addEventListener('mouseup', handleMouseUp);
-});
+    function resetInterval() {
+      clearInterval(sliderInterval);
+      sliderInterval = setInterval(nextImage, intervalTime);
+    }
+
+    // Swipe functionality
+    let startX;
+
+    function handleTouchStart(event) {
+      startX = event.touches[0].clientX;
+    }
+
+    function handleTouchEnd(event) {
+      if (!startX) return;
+
+      const endX = event.changedTouches[0].clientX;
+      const diffX = startX - endX;
+
+      if (diffX > 50) {
+        nextImage();
+        resetInterval();
+      } else if (diffX < -50) {
+        let prevIndex = (currentIndex - 1 + images.length) % images.length;
+        changeImage(prevIndex);
+        resetInterval();
+      }
+
+      startX = null;
+    }
+
+    function handleMouseDown(event) {
+      startX = event.clientX;
+    }
+
+    function handleMouseUp(event) {
+      if (!startX) return;
+
+      const endX = event.clientX;
+      const diffX = startX - endX;
+
+      if (diffX > 50) {
+        nextImage();
+        resetInterval();
+      } else if (diffX < -50) {
+        let prevIndex = (currentIndex - 1 + images.length) % images.length;
+        changeImage(prevIndex);
+        resetInterval();
+      }
+
+      startX = null;
+    }
+
+    document.querySelector('.slider-container').addEventListener('touchstart', handleTouchStart);
+    document.querySelector('.slider-container').addEventListener('touchend', handleTouchEnd);
+    document.querySelector('.slider-container').addEventListener('mousedown', handleMouseDown);
+    document.querySelector('.slider-container').addEventListener('mouseup', handleMouseUp);
+  });
 
   </script>
 

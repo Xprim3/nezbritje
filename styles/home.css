@@ -60,3 +60,17 @@ body {
 .dots-container .dot.active {
   background-color: red;
 }
+
+
+/* Visitor Button Styling */
+
+.visitorBtn {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  z-index: 1;
+  color: #fff;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: clamp(1.3rem, 1.5vw, 1.6rem);
+}
