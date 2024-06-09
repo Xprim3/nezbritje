@@ -8,8 +8,6 @@ body {
   position: relative;
 }
 
-
-
 .slider-container img {
   position: absolute;
   width: 100%;
@@ -67,6 +65,7 @@ body {
   height: 150px;
   right: 0;
   display: flex;
+  z-index: 1;
 }
 
 .reg-btn-container button {
