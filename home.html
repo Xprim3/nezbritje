@@ -16,10 +16,10 @@
   <div class="reg-btn-container">
     <div class="dots-container"></div>
     <div>
-      <button>Regjistrohu</button>
+      <button class="open-modal-btn" data-target="#modal1">Regjistrohu</button>
       <div class="reg-text-log">
         <span>Nese keni logari ju lutem klikoni ketu</span>
-        <span style="color: red;text-decoration: underline;">Kyqu</span>
+        <span class="open-modal-btn" data-target="#modal2" style="color: red;text-decoration: underline;">Kyqu</span>
       </div>
     </div>
 
@@ -44,12 +44,69 @@
 
 
 
+  <div id="modalBackdrop" class="modal-backdrop"></div>
+<!-- Login Panel Modal -->
+
+<div id="modal1" class="modal HomeModal modal2">
+  <div class="modal-content">
+    <h2>Admin Panel Modal</h2>
+    <button class="close-modal-btn">Close</button>
+  </div>
+</div>
+<!-- End of Login Panel Modal Styling  -->
+
+<!-- Register Panel Modal  -->
+
+<div id="modal2" class="modal HomeModal modal2">
+  <div class="modal-content">
+    <h2>Admin Panel Modal</h2>
+    <button class="close-modal-btn">Close</button>
+  </div>
+</div>
+<!-- End of Register Panel Modal Styling  -->
 
 
 
 
+<!-- Modal Open and Closing Script with Transition -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const openModalBtns = document.querySelectorAll('.open-modal-btn');
+    const closeModalBtns = document.querySelectorAll('.close-modal-btn');
+    const body = document.body;
 
+    function openModal(modal, backdrop) {
+      backdrop.classList.add('show');
+      modal.classList.add('show');
+      body.style.overflow = 'hidden';
+    }
 
+    function closeModal(modal, backdrop) {
+      backdrop.classList.remove('show');
+      modal.classList.remove('show');
+      body.style.overflow = 'auto';
+    }
+
+    openModalBtns.forEach(btn => {
+      btn.addEventListener('click', function(event) {
+        event.stopPropagation();
+        const modalSelector = this.getAttribute('data-target');
+        const modal = document.querySelector(modalSelector);
+        const backdrop = document.querySelector('.modal-backdrop');
+        openModal(modal, backdrop);
+      });
+    });
+
+    closeModalBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const modal = this.closest('.modal');
+        const backdrop = document.querySelector('.modal-backdrop');
+        closeModal(modal, backdrop);
+      });
+    });
+  });
+</script>
+<!-- End of Modal Open and Closing Script with Transition -->
 
 
   
@@ -153,7 +210,6 @@
 
 
 <!-- End of Slidding effect on Home Script  -->
-
 
 
 
