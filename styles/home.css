@@ -32,14 +32,23 @@ body {
   pointer-events: none;
 }
 
-.dots-container {
+.reg-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
   position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 25px;
+  left: 0;
+  height: 150px;
+  right: 0;
+  display: flex;
+  row-gap: 25px;
+}
+
+.dots-container {
   display: flex;
   gap: 10px;
-  z-index: 1;
 }
 
 .dots-container .dot {
@@ -54,18 +63,6 @@ body {
   background-color: red;
 }
 
-.reg-btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: column;
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  height: 150px;
-  right: 0;
-  display: flex;
-}
 
 .reg-btn-container button {
   display: inline-block;
