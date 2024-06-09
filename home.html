@@ -7,12 +7,20 @@
 </head>
 <body>
 
-
   <div class="slider-container">
     <img src="/images/1.jpeg" alt="">
     <img src="/images/2.jpeg" alt="">
     <img src="/images/3.jpeg" alt="">
     <div class="dots-container"></div>
+  </div>
+
+  <div class="reg-btn-container">
+    <button>Regjistrohu</button>
+    <div class="reg-text-log">
+      <span>Nese keni logari ju lutem klikoni ketu</span>
+      <span style="color: red;text-decoration: underline;">Kyqu</span>
+    </div>
+
   </div>
 
 
@@ -28,12 +36,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- Slidding effect on Home Script  -->
+
   <script>
     document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('.slider-container img');
     const dotsContainer = document.querySelector('.dots-container');
     let currentIndex = 0;
-    const intervalTime = 10000;
+    const intervalTime = 20000;
 
     images[currentIndex].classList.add('active');
 
@@ -123,6 +148,9 @@
   });
 
   </script>
+
+
+<!-- End of Slidding effect on Home Script  -->
 
 
 

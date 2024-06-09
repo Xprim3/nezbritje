@@ -18,10 +18,14 @@
 :root {
 
   --color-body: #f8f9fa;
-  --color-button: rgb(198, 67, 93);
-  --color-bck:rgb(198, 67, 93);
+  --color-button: #C6435D;
+  --color-bck: #C6435D;
   --color-font: #ffffff;
 
+
+  --sb-track-color: #F0F0F0;
+  --sb-thumb-color: #c6435d;
+  --sb-size: 5px;
 
 }
 
@@ -50,6 +54,27 @@ body {
   max-width: 768px;
   margin: 0 auto;
   background-color: var(--color-body);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 9px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 9px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
 }
 
 a {

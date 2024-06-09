@@ -64,6 +64,32 @@ main {
     padding-bottom: 10px;
 }
 
+/* Category Profile Scrollbar Styling */
+
+    .cat-container::-webkit-scrollbar {
+        width: var(--sb-size);
+        height: 5px;
+    }
+    
+    .cat-container::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 4px;
+    }
+    
+    .cat-container::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 4px;
+    }
+    
+    @supports not selector(::-webkit-scrollbar) {
+        .cat-container {
+        scrollbar-color: var(--sb-thumb-color)
+        var(--sb-track-color);
+        }
+    }
+
+  /* End of Category Profile Scrollbar Styling */
+
 .cat-profile {
     display: flex;
     min-width: 50px;
