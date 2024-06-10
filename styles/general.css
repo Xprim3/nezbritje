@@ -27,6 +27,15 @@
   --sb-thumb-color: #c6435d;
   --sb-size: 5px;
 
+  /* size */
+
+  --size-headings: 2.5rem;
+  --size-labels: clamp(1rem, 2vw, 1.2rem);
+  --size-inputText: clamp(1rem, 2vw, 1.2rem);
+  --size-buttonText: 0.8rem;
+  --size-helpText: clamp(0.9rem, 2vw, 1rem);
+
+
 }
 
 /* Smooth scroll behavior */

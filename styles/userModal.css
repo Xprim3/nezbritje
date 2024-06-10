@@ -111,7 +111,7 @@
 .modal3 {
   width: 90vw;
   height: auto;
-  max-height: 90vh;
+  max-height: 95vh;
   max-width: 400px;
   left: 50%;
   top: 50%;
@@ -205,6 +205,8 @@
 # Login and Register Form Styling
 --------------------------------------------------------------*/
 
+
+
 .mod-title {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -230,14 +232,15 @@ form {
 
 .input-group label {
   text-align: start;
-  font-size: 1rem;
+  font-size: var(--size-labels);
   font-weight: 700;
   padding-left: 3px;
 }
 
 .input-group input {
-  padding: 10px;
-  border-radius: 5px;
+  padding: 8px;
+  font-size: var(--size-inputText);
+  border-radius: 3px;
   background-color: #ebebeb;
   border: none;
   outline: none;
@@ -263,7 +266,7 @@ form {
 .forgot a {
   color: #C6435D;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: var(--size-helpText);
 }
 
 .signBtn {
@@ -284,20 +287,24 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-direction: column;
+  row-gap: 15px;
   font-size: 0.8rem;
   color: #000;
   column-gap: 5px;
-  padding: 20px;
+  padding: 5px 20px 10px 20px;
+}
+
+.privacy-container a {
+  color: #C6435D;
+  text-decoration: none;
 }
 
 .privacy-container p {
   font-size: 0.8rem;
   color: rgb(33, 33, 33);
   margin: 0;
-}
-
-.checkbox-container input[type="checkbox"] {
-  transform: scale(1.5); 
 }
 
 

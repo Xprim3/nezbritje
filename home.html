@@ -24,10 +24,10 @@
   <div class="reg-btn-container">
     <div class="dots-container"></div>
     <div>
-      <button class="open-modal-btn" data-target="#modal1">Regjistrohu</button>
+      <button class="open-modal-btn" data-target="#modal2">Regjistrohu</button>
       <div class="reg-text-log">
         <span>Nese keni logari ju lutem klikoni ketu</span>
-        <span class="open-modal-btn" data-target="#modal2" style="color: #C6435D;">Kyqu</span>
+        <span class="open-modal-btn" data-target="#modal1" style="color: #C6435D;">Kyqu</span>
       </div>
     </div>
   </div>
@@ -63,26 +63,21 @@
   </div>
   <div class="modal-content-admin">
     <form class="form">
-        <div class="input-group">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" required>
-        </div>
-        <div class="input-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required>
-        </div>
-        <div class="forgot">
-          <a href="#">Forgot Password ?</a>
-        </div>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="forgot">
+        <a href="#">Forgot Password ?</a>
       </div>
       <div style="margin: 0 auto;padding: 15px 0px;">
         <button class="signBtn" type="submit">Sign in</button>
       </div>
       <div class="privacy-container">
-        <label class="checkbox-container">
-          <input type="checkbox" id="agree-checkbox">
-          <span class="checkmark"></span>
-        </label>
         <p>By using this website, you agree to our <a href="/privacy-policy">Privacy Policy</a>.</p>
       </div>
     </form>
@@ -100,7 +95,38 @@
     </div>
   </div>
   <div class="modal-content-admin">
-    
+    <form class="form">
+      <div class="input-group">
+        <label for="Name">Emri</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="surename">Mbiemri</label>
+        <input type="text" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="BussinesName">Marketi</label>
+        <input type="text" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="mobNumber">Numri Telefonit</label>
+        <input type="number" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email adresa</label>
+        <input type="email" id="password" name="password" required>
+      </div>
+      <span style="border-bottom-style: dashed;border-bottom-width: 1px;padding: 5px 0;"></span>
+      <div class="forgot">
+        <a href="#">Forgot Password ?</a>
+      </div>
+      <div style="margin: 0 auto;padding: 15px 0px;">
+        <button class="signBtn" type="submit">Regjistrohu</button>
+      </div>
+      <div class="privacy-container">
+        <p>By using this website, you agree to our <a href="/privacy-policy">Privacy Policy</a>.</p>
+      </div>
+    </form>
   </div>
 </div>
 <!-- End of Register Panel Modal Styling  -->
@@ -250,6 +276,6 @@
 
 
 
-<script type="module" src="/src/home.js"></script>
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>
