@@ -10,11 +10,11 @@
 # Product Admin Buttons Styling
 --------------------------------------------------------------*/
 
-.admin-nav-btn {
+.deleteBtn {
   position: absolute;
   top: 0px;
-  right: 0px;
   padding: 10px;
+  left: 0px;
   background-color: transparent;
   border: none;
   border-radius: 8px;
@@ -22,12 +22,17 @@
   color: var(--color-bck);
 }
 
-.deleteBtn {
-  left: 0px;
-}
-
 .editBtn {
+  position: absolute;
+  top: 0px;
   right: 0px;
+  padding: 10px;
+  right: 0px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--color-bck);
 }
 
 /*--------------------------------------------------------------

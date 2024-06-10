@@ -22,7 +22,7 @@
 /* Admin Panel Hidden */
 
 .admin-panel {
-  display: none;
+  display: flex;
 }
 
 /* End of Admin Panel Hidden */
