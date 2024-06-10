@@ -19,7 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-bck);
-  padding: 11px 15px;
+  padding: 10px 15px;
 }
 
 header button {
