@@ -26,3 +26,11 @@
 }
 
 /* End of Admin Panel Hidden */
+
+/* User Panel Hidden */
+
+.user-panel {
+  display: none;
+}
+
+/* End of User Panel Hidden */

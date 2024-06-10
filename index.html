@@ -36,16 +36,14 @@
 
     <header>
       <button><span class="material-symbols-outlined footer-icon btn-pad open-modal-btn" data-target="#modal6">notifications</span></button>
-      <span style="color: #fff;">Ne Zbritje!</span>
-      <div class="flex-alg-center">
-        <span class="material-symbols-outlined admin-panel footer-icon btn-pad">add</span>
-        <button><span class="material-symbols-outlined footer-icon btn-pad open-modal-btn" data-target="#modal4">shopping_cart</span></button>
-        <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad" id="toggleButton">account_circle</span></button>
-        <div id="buttonsContainer">
-          <button class="open-modal-btn" data-target="#modal2">Login or Register</button>
-          <button>Language: English</button>
-          <button>Support</button>
-      </div>
+      <button><span class="material-symbols-outlined footer-icon btn-pad open-modal-btn" data-target="#modal4">shopping_cart</span></button>
+      <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad open-modal-btn" data-target="#modal2">add</span></button>
+      <span class="material-symbols-outlined footer-icon btn-pad user-panel open-modal-btn" data-target="#modal9">login</span>
+      <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad" id="toggleButton">account_circle</span></button>
+      <div id="buttonsContainer" class="admin-panel">
+        <button class="open-modal-btn" data-target="#modal2">Settings</button>
+        <button>Language: English</button>
+        <button>Logout</button>
       </div>
     </header>
 
@@ -644,13 +642,31 @@
 
 <div id="modal9" class="modal modal2">
   <div class="title-close-btn">
-    <span class="mod-title">Login Panel</span>
+    <span class="mod-title">Kyqu</span>
     <div class="close-modal-btn">
       <span class="material-symbols-outlined">close</span>
     </div>
   </div>
   <div class="modal-content-admin">
-    
+    <form class="form">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="forgot">
+        <a href="#">Forgot Password ?</a>
+      </div>
+      <div style="margin: 0 auto;padding: 15px 0px;">
+        <button class="signBtn" type="submit">Sign in</button>
+      </div>
+      <div class="privacy-container">
+        <p>By using this website, you agree to our <a href="/privacy-policy">Privacy Policy</a>.</p>
+      </div>
+    </form>
   </div>
 </div>
 <!-- End of Admin Panel Modal Styling  -->
