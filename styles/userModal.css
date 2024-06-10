@@ -131,7 +131,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 20px;
+  padding: 20px 30px;
   overflow: auto;
 
 }
@@ -178,7 +178,6 @@
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
-  
 }
 
 .title-close-btn {
@@ -200,4 +199,114 @@
 
 /*--------------------------------------------------------------
 # End of Title and Close Button Styling 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Login and Register Form Styling
+--------------------------------------------------------------*/
+
+.mod-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  row-gap: 5px;
+  font-size: 0.875rem;
+}
+
+.input-group label {
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-left: 3px;
+}
+
+.input-group input {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  border: none;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #333;
+}
+
+.input-group input:focus {
+  outline: solid 1px #C6435D;
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  color: rgb(0, 0, 0);
+
+}
+
+.forgot a {
+  color: #C6435D;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.signBtn {
+  display: block;
+  padding: 0.5rem 4.5rem;
+  background-color: #C6435D;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.privacy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #000;
+  column-gap: 5px;
+  padding: 20px;
+}
+
+.privacy-container p {
+  font-size: 0.8rem;
+  color: rgb(33, 33, 33);
+  margin: 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  transform: scale(1.5); 
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End of Login and Register Form Styling
 --------------------------------------------------------------*/

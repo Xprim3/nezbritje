@@ -60,7 +60,7 @@ body {
 }
 
 .dots-container .dot.active {
-  background-color: red;
+  background-color: #C6435D;
 }
 
 
@@ -74,7 +74,7 @@ body {
   min-height: 36px;
   min-width: 36px;
   color: #ffffff;
-  background: #008060;
+  background: #C6435D;
   border-radius: 4px;
   font-weight: 500;
   font-size: 14px;
