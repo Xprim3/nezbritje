@@ -8,12 +8,6 @@ body {
   position: relative;
 }
 
-.HomeModal {
-  width: 75vw;
-  max-width: 450px;
-  background-color: lightcoral;
-}
-
 .slider-container img {
   position: absolute;
   width: 100%;
