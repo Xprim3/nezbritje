@@ -35,11 +35,15 @@
     <!--  Header  -->
 
     <header>
-      <button><span class="material-symbols-outlined footer-icon btn-pad open-modal-btn" data-target="#modal6">notifications</span></button>
-      <button><span class="material-symbols-outlined footer-icon btn-pad open-modal-btn" data-target="#modal4">shopping_cart</span></button>
+      <div class="logoBox user-panel">
+        <img src="public/images/Logo.svg" alt="">
+      </div>
       <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad open-modal-btn" data-target="#modal2">add</span></button>
-      <span class="material-symbols-outlined footer-icon btn-pad user-panel open-modal-btn" data-target="#modal9">login</span>
-      <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad" id="toggleButton">account_circle</span></button>
+      <div class="flex-alg-center col-5px">
+        <button><span class="material-symbols-outlined footer-icon btn-pad open-modal-btn" data-target="#modal4">shopping_cart</span></button>
+        <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad" id="toggleButton">account_circle</span></button>
+        <button><span class="material-symbols-outlined user-panel footer-icon btn-pad open-modal-btn" data-target="#modal9">login</span></button>
+      </div>
       <div id="buttonsContainer" class="admin-panel">
         <button class="open-modal-btn" data-target="#modal2">Settings</button>
         <button>Logout</button>

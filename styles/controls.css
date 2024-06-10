@@ -17,12 +17,16 @@
   align-items: center;
 }
 
+.col-5px {
+  column-gap: 10px;
+}
+
 /* End of Flex Align Center */
 
 /* Admin Panel Hidden */
 
 .admin-panel {
-  display: flex;
+  display: none;
 }
 
 /* End of Admin Panel Hidden */
@@ -30,7 +34,7 @@
 /* User Panel Hidden */
 
 .user-panel {
-  display: none;
+  display: flex;
 }
 
 /* End of User Panel Hidden */

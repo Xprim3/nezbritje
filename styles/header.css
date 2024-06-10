@@ -30,3 +30,16 @@ header button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 45px;
+}
+
+.logoBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
