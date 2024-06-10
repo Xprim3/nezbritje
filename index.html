@@ -612,44 +612,48 @@
 
 
 <!-- Modal Open and Closing Script with Transition -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const openModalBtns = document.querySelectorAll('.open-modal-btn');
-      const closeModalBtns = document.querySelectorAll('.close-modal-btn');
-      const body = document.body;
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const openModalBtns = document.querySelectorAll('.open-modal-btn');
+    const closeModalBtns = document.querySelectorAll('.close-modal-btn');
+    const body = document.body;
 
-      function openModal(modal, backdrop) {
-        backdrop.classList.add('show');
-        modal.classList.add('show');
-        body.style.overflow = 'hidden';
-      }
+    // Enable scrolling when the page loads
+    body.style.overflow = 'auto';
 
-      function closeModal(modal, backdrop) {
-        backdrop.classList.remove('show');
-        modal.classList.remove('show');
-        body.style.overflow = 'auto';
-      }
+    function openModal(modal, backdrop) {
+      backdrop.classList.add('show');
+      modal.classList.add('show');
+      body.style.overflow = 'hidden';
+    }
 
-      openModalBtns.forEach(btn => {
-        btn.addEventListener('click', function(event) {
-          event.stopPropagation();
-          const modalSelector = this.getAttribute('data-target');
-          const modal = document.querySelector(modalSelector);
-          const backdrop = document.querySelector('.modal-backdrop');
-          openModal(modal, backdrop);
-        });
-      });
+    function closeModal(modal, backdrop) {
+      backdrop.classList.remove('show');
+      modal.classList.remove('show');
+      body.style.overflow = 'auto';
+    }
 
-      closeModalBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-          const modal = this.closest('.modal');
-          const backdrop = document.querySelector('.modal-backdrop');
-          closeModal(modal, backdrop);
-        });
+    openModalBtns.forEach(btn => {
+      btn.addEventListener('click', function(event) {
+        event.stopPropagation();
+        const modalSelector = this.getAttribute('data-target');
+        const modal = document.querySelector(modalSelector);
+        const backdrop = document.querySelector('.modal-backdrop');
+        openModal(modal, backdrop);
       });
     });
-  </script>
-  <!-- End of Modal Open and Closing Script with Transition -->
+
+    closeModalBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const modal = this.closest('.modal');
+        const backdrop = document.querySelector('.modal-backdrop');
+        closeModal(modal, backdrop);
+      });
+    });
+  });
+</script>
+
+<!-- End of Modal Open and Closing Script with Transition -->
 
 
   <!-- Quantity and Add to cart Button Script -->
