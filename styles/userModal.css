@@ -29,17 +29,10 @@
   display: none;
   position: fixed;
   background-color: #fff;
-  padding: 20px;
   z-index: 2;
 }
 
-.modal {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.modal-content {
+.modal-content-user {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -66,7 +59,7 @@
 }
 
 .modal1.show {
-  display: block;
+  display: flex;
   animation: slideIn 0.3s forwards, fadeIn 0.3s forwards;
 }
 
@@ -115,7 +108,8 @@
 }
 
 .modal3 {
-  width: 80vw;
+  width: 90vw;
+  height: 85vh;
   max-width: 400px;
   left: 50%;
   top: 50%;
@@ -126,8 +120,18 @@
 }
 
 .modal3.show {
-  display: block;
+  display: flex;
+  flex-direction: column;
   animation: fadeIn2 0.3s forwards, slideIn2 0.3s forwards;
+}
+
+.modal-content-admin {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  overflow: auto;
+
 }
 
 
@@ -164,11 +168,17 @@
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Admin Action Modal Base Script and Styling
+# Title and Close Button Styling 
 --------------------------------------------------------------*/
 
+.title-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
 
 /*--------------------------------------------------------------
-# End of Admin Action Modal Base Script and Styling
+# End of Title and Close Button Styling 
 --------------------------------------------------------------*/
