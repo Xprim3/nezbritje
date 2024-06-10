@@ -7,4 +7,5 @@ import '../styles/mainSection.css';
 import '../styles/bottomNav.css';
 
 import '../styles/userModal.css';
+import '../styles/adminNav.css';
 import '../styles/controls.css';

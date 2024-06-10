@@ -1,0 +1,35 @@
+/*
+* Website Designed by Denis Januzi
+* Created: April 1 2024
+* Contact Address: denisjanuzi@gmail.com (+38349106068)
+* Author: Denis Januzi
+* License: denis.cilesi.com
+*/
+
+/*--------------------------------------------------------------
+# Product Admin Buttons Styling
+--------------------------------------------------------------*/
+
+.admin-nav-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--color-bck);
+}
+
+.deleteBtn {
+  left: 0px;
+}
+
+.editBtn {
+  right: 0px;
+}
+
+/*--------------------------------------------------------------
+# End of Product Admin Buttons Styling
+--------------------------------------------------------------*/

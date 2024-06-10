@@ -32,14 +32,6 @@
   z-index: 2;
 }
 
-.modal-content-user {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 25px 0;
-  height: auto;
-}
-
 /*--------------------------------------------------------------
 # End of User Action Modal Base Script and Styling
 --------------------------------------------------------------*/
@@ -60,6 +52,7 @@
 
 .modal1.show {
   display: flex;
+  flex-direction: column;
   animation: slideIn 0.3s forwards, fadeIn 0.3s forwards;
 }
 
@@ -81,6 +74,14 @@
   to {
     opacity: 1;
   }
+}
+
+.modal-content-user {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 25px 0;
+  height: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -109,7 +110,8 @@
 
 .modal3 {
   width: 90vw;
-  height: 85vh;
+  height: auto;
+  max-height: 90vh;
   max-width: 400px;
   left: 50%;
   top: 50%;
@@ -171,11 +173,28 @@
 # Title and Close Button Styling 
 --------------------------------------------------------------*/
 
+.mod-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  
+}
+
 .title-close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
+}
+
+.close-modal-btn {
+  padding: 10px;
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  display: flex;
+  align-items: center;
 }
 
 
