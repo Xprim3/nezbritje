@@ -194,6 +194,7 @@
   right: 5px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 
@@ -307,13 +308,73 @@ form {
   margin: 0;
 }
 
+/*--------------------------------------------------------------
+# End of Login and Register Form Styling
+--------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Confirmation Buttons Styling
+--------------------------------------------------------------*/
 
+.cofirmBox {
+  row-gap: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 45px;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.modal-buttons button {
+  appearance: button;
+  background-color: #C6435D;
+  border: 1px solid #C6435D;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--color-font);
+  cursor: pointer;
+  font-size: var(--size-inputText);
+  line-height: 1.15;
+  overflow: visible;
+  padding: 8px 15px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+
+/* Confirmation Text Styling */
+
+ .confirm-text {
+  text-align: center;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+/* Confirmation Button Styling */
+
+.modal-buttons button:disabled {
+  opacity: .5;
+}
+
+.modal-buttons button:focus {
+  outline: 0;
+}
+
+.modal-buttons button:hover {
+  background-color: #c3596e;
+  border-color: #C6435D;
+}
 
 
 
 
 
 /*--------------------------------------------------------------
-# End of Login and Register Form Styling
+# Confirmation Buttons Styling
 --------------------------------------------------------------*/

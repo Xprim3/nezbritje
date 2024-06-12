@@ -26,7 +26,7 @@
 /* Admin Panel Hidden */
 
 .admin-panel {
-  display: none;
+  display: flex;
 }
 
 /* End of Admin Panel Hidden */
@@ -34,7 +34,7 @@
 /* User Panel Hidden */
 
 .user-panel {
-  display: flex;
+  display: none;
 }
 
 /* End of User Panel Hidden */

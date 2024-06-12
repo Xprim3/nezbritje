@@ -36,17 +36,17 @@
 
     <header>
       <div class="logoBox user-panel">
-        <img src="public/images/Logo.svg" alt="">
+        <span style="color: white;">Ne Zbritje</span>
       </div>
-      <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad open-modal-btn" data-target="#modal2">add</span></button>
-      <div class="flex-alg-center col-5px">
+      <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad open-modal-btn" data-target="#modal7">add</span></button>
+      <div class="flex-alg-center">
         <button><span class="material-symbols-outlined footer-icon btn-pad open-modal-btn" data-target="#modal4">shopping_cart</span></button>
         <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad" id="toggleButton">account_circle</span></button>
         <button><span class="material-symbols-outlined user-panel footer-icon btn-pad open-modal-btn" data-target="#modal9">login</span></button>
       </div>
       <div id="buttonsContainer" class="admin-panel">
         <button class="open-modal-btn" data-target="#modal2">Settings</button>
-        <button>Logout</button>
+        <button class="open-modal-btn" data-target="#modal11">Logout</button>
       </div>
     </header>
 
@@ -126,10 +126,6 @@
 
       <!-- End of Profile Store Section -->
 
-      <div class="addProductBtn admin-panel open-modal-btn" data-target="#modal7">
-        <span class="material-symbols-outlined">add_circle</span>
-        <button>Add Product</button>
-      </div>
       <!--  Main Product Section  -->
       <section class="main-productGrid">
 
@@ -545,6 +541,10 @@
   <div class="modal-content-user">
     
   </div>
+  <div class="modal-buttons">
+    <button>No</button>
+    <button>Yes</button>
+</div>
 </div>
 
 <!-- End of Product Modal Styling -->
@@ -561,6 +561,10 @@
   <div class="modal-content-admin">
     
   </div>
+  <div class="modal-buttons">
+    <button>No</button>
+    <button>Yes</button>
+</div>
 </div>
 
 <!-- End of Admin Edit Button Modal -->
@@ -577,6 +581,10 @@
   <div class="modal-content-admin">
     
   </div>
+  <div class="modal-buttons">
+    <button>No</button>
+    <button>Yes</button>
+</div>
 </div>
 
 <!-- End of Admin Delete Product Button Modal -->
@@ -593,6 +601,10 @@
   <div class="modal-content-user">
     
   </div>
+  <div class="modal-buttons">
+    <button>No</button>
+    <button>Yes</button>
+</div>
 </div>
 <!-- End of Cart Modal Styling -->
 
@@ -608,6 +620,10 @@
   <div class="modal-content-admin">
     
   </div>
+  <div class="modal-buttons">
+    <button>No</button>
+    <button>Yes</button>
+</div>
 </div>
 <!-- End of Notifications Modal Styling -->
 
@@ -623,6 +639,10 @@
   <div class="modal-content-admin">
     
   </div>
+  <div class="modal-buttons">
+    <button>No</button>
+    <button>Yes</button>
+</div>
 </div>
 <!-- End of  Add Product Modal Styling  -->
 
@@ -638,8 +658,30 @@
   <div class="modal-content-admin">
     
   </div>
+  <div class="modal-buttons">
+    <button>No</button>
+    <button>Yes</button>
+</div>
 </div>
 <!-- End of Filter Modal Styling  -->
+
+<!-- Logout Modal Styling  -->
+
+<div id="modal11" class="modal modal2">
+  <div class="title-close-btn">
+    <div class="close-modal-btn">
+      <span class="material-symbols-outlined">close</span>
+    </div>
+  </div>
+  <div class="modal-content-admin cofirmBox">
+    <p class="confirm-text">Are you sure you want to logout?</p>
+  </div>
+  <div class="modal-buttons">
+    <button>Cancel</button>
+    <button>Logout</button>
+</div>
+</div>
+<!-- End of Logout Modal Styling  -->
 
 <!-- Admin Panel  Modal Styling  -->
 
