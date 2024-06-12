@@ -318,6 +318,7 @@ form {
 
 .cofirmBox {
   row-gap: 10px;
+  margin-top: 45px;
 }
 
 .modal-buttons {
@@ -332,7 +333,7 @@ form {
   appearance: button;
   background-color: #C6435D;
   border: 1px solid #C6435D;
-  border-radius: 4px;
+  border-radius: 8px;
   box-sizing: border-box;
   color: var(--color-font);
   cursor: pointer;
