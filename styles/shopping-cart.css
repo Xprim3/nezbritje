@@ -1,0 +1,15 @@
+.bckHeader {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+}
+
+.bckCartbtn {
+  background-color: transparent;
+  font-size: 1.1rem;
+  color: var(--color-font);
+  column-gap: 10px;
+  cursor: pointer;
+
+}

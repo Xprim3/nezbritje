@@ -33,24 +33,31 @@
 <body>
 
 
-  <header class="cartHeader">
-    <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad">keyboard_return</span></button>
-    <div class="search-container">
-      <input type="search" placeholder="Search Here...">
+  <header>
+    <div class="flex-alg-center cartHeader">
+      <div class="search-container">
+        <input type="search" placeholder="Search Here...">
+      </div>
+      <div class="flex-alg-center">
+        <a href = "/cart.html"><button><span class="material-symbols-outlined footer-icon btn-pad">shopping_cart</span></button></a>
+        <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad" id="toggleButton">account_circle</span></button>
+        <button><span class="material-symbols-outlined user-panel footer-icon btn-pad open-modal-btn" data-target="#modal9">login</span></button>
+      </div>
+      <div id="buttonsContainer" class="admin-panel">
+        <button class="open-modal-btn" data-target="#modal2">Settings</button>
+        <button class="open-modal-btn" data-target="#modal11">Logout</button>
+      </div>
     </div>
-    <div class="flex-alg-center">
-      <a href = "/cart.html"><button><span class="material-symbols-outlined footer-icon btn-pad">shopping_cart</span></button></a>
-      <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad" id="toggleButton">account_circle</span></button>
-      <button><span class="material-symbols-outlined user-panel footer-icon btn-pad open-modal-btn" data-target="#modal9">login</span></button>
-    </div>
-    <div id="buttonsContainer" class="admin-panel">
-      <button class="open-modal-btn" data-target="#modal2">Settings</button>
-      <button class="open-modal-btn" data-target="#modal11">Logout</button>
-    </div>
+  <div class="bckHeader flex-alg-center">
+    <a href="/index.html">
+      <button class="bckCartbtn">
+        <span class="material-symbols-outlined admin-panel footer-icon">arrow_back</span>
+        <span>Continue Shopping</span>
+      </button>
+    </a>
+  </div>
+  
   </header>
-
-
-
 
 
 
