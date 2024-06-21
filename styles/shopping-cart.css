@@ -75,6 +75,8 @@
 .footerSection {
   display: flex;
   gap: 10px;
+  position: sticky;
+  bottom: 0;
   padding: 15px;
   flex-direction: column;
 }
