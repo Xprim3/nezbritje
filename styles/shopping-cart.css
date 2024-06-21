@@ -78,5 +78,6 @@
   position: sticky;
   bottom: 0;
   padding: 15px;
+  background-color: var(--color-footer);
   flex-direction: column;
 }
