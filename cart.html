@@ -32,7 +32,6 @@
 </head>
 <body>
 
-
   <header>
     <div class="flex-alg-center cartHeader">
       <div class="flex-alg-center">
@@ -53,49 +52,95 @@
         <button class="open-modal-btn" data-target="#modal11">Logout</button>
       </div>
     </div>
-  
   </header>
 
-  <section class="cartProducts">
-    <table>
+  <table class="cartSection">
+    <tbody>
+      
+      <!-- Product Box  -->
+      <tr>
+        <!-- Product Image Box -->
+        <td class="prodBox">
+          <img src="/images/2.jpg" alt="Product Image">
+        </td>
+        <td class="infBox">
+          <p>Leng Vishnje Frutti 1L</p>
+          <div style="display: flex;align-items: center; justify-content: space-between;width: 100%;">
+            <div>
+              <span>100</span>
+              <span>€</span>
+            </div>
+            <!-- Quantity Incress and Decress Container-->
+            <div> 
+              <button class="cart-btn">Add to Cart</button>
+              <div class="quantity-controls">
+                <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
+                <input type="number" class="quantity-input" value="1" readonly>
+                <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- End of Product Box  -->
 
-      <tbody>
-        <tr>
-          <td class="prductimgBox">
-            <img src="/assets/img/olive-oil.jpg" alt="Vaj Ulliri Ferrera">
-          </td>
-        </tr>
-        <tr>
-          <td>Vaj Ulliri Ferrera</td>
-          <td>nga Italia</td>
-          <td>
-            15 Euro
-          </td>
-        </tr>
-      </tbody>
-
-    </table>
-
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </tbody>
+  </table>
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Quantity and Add to cart Button Script -->
+  <script>
+    document.querySelectorAll('.cart-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const parent = this.closest('.product-card');
+        const addToCartBtn = parent.querySelector('.cart-btn');
+        const quantityControls = parent.querySelector('.quantity-controls');
+
+        addToCartBtn.style.display = 'none';
+        quantityControls.style.display = 'flex';
+      });
+    });
+
+    document.querySelectorAll('.quantity-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const parent = this.closest('.product-card');
+        const quantityInput = parent.querySelector('.quantity-input');
+        const addToCartBtn = parent.querySelector('.cart-btn');
+        const quantityControls = parent.querySelector('.quantity-controls');
+
+        if (btn.classList.contains('highCon')) {
+          quantityInput.value = parseInt(quantityInput.value) + 1;
+        } else {
+          if (quantityInput.value > 1) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+          } else {
+            addToCartBtn.style.display = 'block';
+            quantityControls.style.display = 'none';
+          }
+        }
+      });
+    });
+  </script>
+
+  <!-- End of  Quantity and Add to cart Button Script -->
 
 
   <script type="module" src="/src/main.js"></script>
