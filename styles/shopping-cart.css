@@ -78,6 +78,6 @@
   position: sticky;
   bottom: 0;
   padding: 15px;
-  background-color: red;
+  background-color: var(--color-body);
   flex-direction: column;
 }
