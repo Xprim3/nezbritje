@@ -27,6 +27,7 @@
   flex-direction: column;
   height: 100%;
   overflow: auto;
+  padding-bottom: 50px;
 }
 
 .cartSection tbody {
