@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 768px) {
   .cartSection tbody {
-    padding: 0px;
+    padding: 15px 0 25px 0;
   }
 }
 
