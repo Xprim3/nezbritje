@@ -61,6 +61,6 @@ header button {
 .cartHeader {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }

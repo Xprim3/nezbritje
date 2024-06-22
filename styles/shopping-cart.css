@@ -11,8 +11,14 @@
 --------------------------------------------------------------*/
 
 .bckCartbtn {
+  display: flex;
+  align-items: center;
   font-size: 1.1rem;
-  color: var(--color-font);
+  color: black;
+  column-gap: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
 }
 
 /* Main Table Styling */
