@@ -43,7 +43,7 @@
 
 .cartSection tr {
   display: grid;
-  padding: 15px 15px;
+  padding: 10px;
   grid-template-columns: auto 3fr;
   grid-template-rows: 1fr;
   height: auto;
@@ -71,7 +71,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  gap: 21px;
+  gap: 10px;
 }
 
 .infTitle {
@@ -80,7 +80,7 @@
 }
 
 .infPrice {
-  font-size: clamp(1.1rem, 1.5vw, 1.2rem);
+  font-size: clamp(1.0rem, 1.5vw, 1.2rem);
   font-weight: 700;
 }
 
