@@ -56,7 +56,7 @@
 
 .quantity-btn {
   display: flex;
-  width: clamp(30px, 5vw, 40px);
+  width: clamp(30px, 5vw, 30px);
   height: clamp(30px, 5vw, 30px);
   justify-content: center;
   background-color: #f0f0f0;
@@ -82,9 +82,24 @@
 }
 
 .quantity-input {
-  width: 50px;
+  width: 35px;
+  padding: 0 4px;
   text-align: center;
   border: none;
+  outline: none;
+  height: 30px;
+}
+
+/* Hide the spinners */
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-input {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield;
 }
 
 /* End of add to cart and Quantity Styling  */

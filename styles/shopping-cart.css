@@ -11,12 +11,8 @@
 --------------------------------------------------------------*/
 
 .bckCartbtn {
-  background-color: transparent;
   font-size: 1.1rem;
   color: var(--color-font);
-  column-gap: 6px;
-  cursor: pointer;
-  white-space: nowrap;
 }
 
 /* Main Table Styling */
@@ -75,7 +71,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  gap: 8px;
+  gap: 21px;
 }
 
 .footerSection {
