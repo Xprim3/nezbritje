@@ -10,24 +10,12 @@
 # Shopping Cart Product Section Styling
 --------------------------------------------------------------*/
 
-.bckCartbtn {
-  display: flex;
-  align-items: center;
-  font-size: 1.1rem;
-  color: black;
-  column-gap: 10px;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-}
-
 /* Main Table Styling */
 
 .cartSection {
   display: flex;
   width: 100%;
   flex-direction: column;
-  height: auto;
   overflow: auto;
   padding: 15px 0 75px 0;
 }
