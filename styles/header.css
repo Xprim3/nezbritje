@@ -59,8 +59,12 @@ header button {
 }
 
 .cartHeader {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  position: static;
+  padding: 21px;
+}
+
+.cartHeader img {
+  width: 140px;
+  height: 50px;
+  object-fit: cover;
 }

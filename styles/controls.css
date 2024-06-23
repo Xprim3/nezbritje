@@ -17,6 +17,13 @@
   align-items: center;
 }
 
+/* Flex justify Center */
+
+.flex-just-center {
+  display: flex;
+  justify-content: center;
+}
+
 .col-5px {
   column-gap: 10px;
 }
