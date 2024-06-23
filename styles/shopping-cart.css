@@ -17,6 +17,7 @@
   width: 100%;
   flex-direction: column;
   overflow: auto;
+  height: 100vh;
   padding: 15px 0 75px 0;
 }
 
