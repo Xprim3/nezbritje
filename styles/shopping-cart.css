@@ -32,6 +32,12 @@
   padding: 45px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .cartSection {
+    padding: 15px 0 0 0;
+  }
+}
+
 .cartSection tbody {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
