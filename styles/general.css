@@ -63,6 +63,7 @@ body {
   max-width: 768px;
   position: relative;
   margin: 0 auto;
+  height: auto;
   background-color: var(--color-body);
 }
 
