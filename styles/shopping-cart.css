@@ -26,13 +26,16 @@
   }
 }
 
+/* End of Main Table Styling */
+
+/* Product Styling */
+
 .cartSection tbody {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   padding: 15px 0 29px 0;
   margin: 0 21px;
   gap: 15px;
-
 }
 
 .cartSection tr {
@@ -78,6 +81,12 @@
   font-size: clamp(1.0rem, 1.5vw, 1.2rem);
   font-weight: 700;
 }
+
+/* End of Product Styling */
+
+/*--------------------------------------------------------------
+# Total Price and Buttons Styling
+--------------------------------------------------------------*/
 
 .tprCotainer {
   display: grid;
@@ -142,3 +151,7 @@
   color: #ffffff;
   opacity: 0.9;
 }
+
+/*--------------------------------------------------------------
+# End of Total Price and Buttons Styling
+--------------------------------------------------------------*/
