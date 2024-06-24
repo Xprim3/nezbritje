@@ -59,8 +59,13 @@ header button {
 }
 
 .cartHeader {
-  position: static;
-  padding: 21px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  column-gap: 10px;
+  color: white;
 }
 
 .cartHeader img {
