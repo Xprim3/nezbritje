@@ -381,9 +381,13 @@ form {
 
 .FilterSection th {
   display: inline;
-  font-size: 20px;
+  font-size: 1.3rem;
   color: brown;
   font-weight: 700;
+}
+
+.filter-Pcontent td {
+  font-size: 0.9rem;
 }
 /*--------------------------------------------------------------
 # End of Filter Modal Styling
