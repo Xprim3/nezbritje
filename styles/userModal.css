@@ -108,30 +108,11 @@
   animation: fadeIn2 0.3s forwards, slideIn2 0.3s forwards;
 }
 
-.modal3 {
-  width: 90vw;
-  height: auto;
-  max-height: 90vh;
-  max-width: 400px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.modal3.show {
-  display: flex;
-  flex-direction: column;
-  animation: fadeIn2 0.3s forwards, slideIn2 0.3s forwards;
-}
-
 .modal-content-admin {
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-height: 65vh;
+  max-height: 70vh;
   padding: 20px 10px;
   overflow: auto;
 
@@ -404,13 +385,10 @@ form {
   color: brown;
   font-weight: 700;
 }
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # End of Filter Modal Styling
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# 
 --------------------------------------------------------------*/
