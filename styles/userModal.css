@@ -167,10 +167,7 @@
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-color: var(--color-bck);
-  color: #fff;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .close-modal-btn {
@@ -199,6 +196,7 @@
   line-height: 1.75rem;
   font-weight: 600;
   text-align: center;
+  color: #000;
 }
 
 form {
