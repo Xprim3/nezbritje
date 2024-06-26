@@ -131,7 +131,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 20px 30px;
+  max-height: 70vh;
+  padding: 20px 10px;
   overflow: auto;
 
 }
@@ -374,4 +375,42 @@ form {
 
 /*--------------------------------------------------------------
 # Confirmation Buttons Styling
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Filter Modal Styling
+--------------------------------------------------------------*/
+
+.FilterSection {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.FilterSection tbody tr {
+  display: flex;
+  align-items: start;
+  padding: 10px 10px;
+  border-bottom-style: solid;
+  justify-content: space-between;
+  border-bottom-width: 1px;
+  border-bottom-color: #ebebeb;
+}
+
+.FilterSection th {
+  display: inline;
+  font-size: 20px;
+  color: brown;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End of Filter Modal Styling
 --------------------------------------------------------------*/
