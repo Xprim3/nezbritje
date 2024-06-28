@@ -399,7 +399,7 @@ form {
 .product-form-container {
   display: flex;
   align-items: center;
-  padding: 0px 25px 15px 25px;
+  padding: 0px 25px 35px 25px;
   overflow: auto;
   row-gap: 15px;
 }
@@ -417,7 +417,6 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 250px;
   row-gap: 14px;
 }
 
@@ -435,6 +434,13 @@ form {
   justify-content: space-between;
   font-size: 1.1rem;
   font-weight: 500;
+}
+
+.space-btw {
+  padding: 8px 0px;
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-bottom-color: #b6b6b6;
 }
 
 
