@@ -367,15 +367,14 @@ form {
   flex-wrap: wrap;
   row-gap: 15px;
   margin: 25px 0;
-  justify-content: center;
   column-gap: 5px;
 }
 
 .chip {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 8px 15px;
   background-color: #f1f1f1;
-  border-radius: 25px;
+  border-radius: 5px;
   font-size: 15px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
