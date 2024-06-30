@@ -385,6 +385,48 @@ form {
   color: #fff;
 }
 
+.Productnavbox {
+  margin-top: 25px;
+}
+
+.inProductnavbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+  padding: 15px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.visible {
+  display: flex;
+}
+
+.addCartBtn {
+  width: 100%;
+  background-color: var(--color-button);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--size-inputText);
+  height: clamp(35px, 5vw, 40px);
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.inProductBtn{
+  width: clamp(35px, 5vw, 40px);
+  height: clamp(35px, 5vw, 40px);
+}
+
+.inputProduct{
+  width: clamp(35px, 5vw, 40px);
+  height: clamp(35px, 5vw, 40px);
+}
+
 
 /*--------------------------------------------------------------
 # End of Filter Modal Styling
