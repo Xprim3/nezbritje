@@ -46,7 +46,7 @@
         <button><span class="material-symbols-outlined user-panel footer-icon btn-pad open-modal-btn" data-target="#modal9">login</span></button>
       </div>
       <div id="buttonsContainer" class="admin-panel">
-        <button class="open-modal-btn" data-target="#modal2">Settings</button>
+        <button class="open-modal-btn" data-target="#modal14">Settings</button>
         <button class="open-modal-btn" data-target="#modal11">Logout</button>
       </div>
     </header>
@@ -595,12 +595,65 @@
 
 <div id="modal2" class="modal modal2">
   <div class="title-close-btn">
-    <span class="mod-title">Edit Modal</span>
+    <span class="mod-title">Edito Produktin</span>
     <div class="close-modal-btn">
       <span class="material-symbols-outlined">close</span>
     </div>
   </div>
   <div class="modal-content-admin">
+    <div class="add-product-container">
+      <form>
+        <div class="add-input-group">
+          <label for="product-name">Emri Produktit</label>
+          <input type="text" id="product-name" name="product-name" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-price">Qmimi Produktit</label>
+          <input type="number" id="product-price" name="product-price" required>          
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-discount">Zbritja Produktit</label>
+          <input type="number" id="product-discount" name="product-discount" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-unit">Sasia Produktit</label>
+          <input type="text" id="product-unit" name="product-unit" required>
+        </div>
+        
+        <div class="add-input-group">
+          <label for="product-image">Product Image</label>
+          <input type="file" id="product-image" name="product-image" accept="image/*" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-origin">Origjina Produktit</label>
+          <input type="text" id="product-origin" name="product-origin" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-expiry">Skadenca Ofertes</label>
+          <input type="date" id="product-expiry" name="product-expiry" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-location">Lokacioni Produktit</label>
+          <input type="text" id="product-location" name="product-location" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-link">Linku Produktit</label>
+          <input type="text" id="product-link" name="product-link" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-store">Emri Marketit</label>
+          <input type="text" id="product-store" name="product-store" required>
+        </div> 
+      </form>
+    </div>
     
   </div>
   <div class="modal-buttons">
@@ -666,20 +719,72 @@
 
 <div id="modal7" class="modal modal2">
   <div class="title-close-btn">
-    <span class="mod-title">Add Product</span>
+    <span class="mod-title">Shto Produktin</span>
     <div class="close-modal-btn">
       <span class="material-symbols-outlined">close</span>
     </div>
   </div>
   <div class="modal-content-admin">
-    
+    <div class="add-product-container">
+      <form>
+        <div class="add-input-group">
+          <label for="product-name">Emri Produktit</label>
+          <input type="text" id="product-name" name="product-name" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-price">Qmimi Produktit</label>
+          <input type="number" id="product-price" name="product-price" required>          
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-discount">Zbritja Produktit</label>
+          <input type="number" id="product-discount" name="product-discount" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-unit">Sasia Produktit</label>
+          <input type="text" id="product-unit" name="product-unit" required>
+        </div>
+        
+        <div class="add-input-group">
+          <label for="product-image">Product Image</label>
+          <input type="file" id="product-image" name="product-image" accept="image/*" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-origin">Origjina Produktit</label>
+          <input type="text" id="product-origin" name="product-origin" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-expiry">Skadenca Ofertes</label>
+          <input type="date" id="product-expiry" name="product-expiry" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-location">Lokacioni Produktit</label>
+          <input type="text" id="product-location" name="product-location" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-link">Linku Produktit</label>
+          <input type="text" id="product-link" name="product-link" required>
+        </div>
+
+        <div class="add-input-group">
+          <label for="product-store">Emri Marketit</label>
+          <input type="text" id="product-store" name="product-store" required>
+        </div> 
+      </form>
+    </div>
   </div>
   <div class="modal-buttons">
     <button>No</button>
     <button>Yes</button>
   </div>  
 </div>
-<!-- End of  Add Product Modal Styling  -->
+<!-- End of Add Product Modal Styling  -->
 
 <!-- Filter Modal Styling  -->
 
@@ -763,6 +868,29 @@
     <button>Yes</button>
   </div>
 </div>
+
+<!-- Admin Settings Modal  -->
+
+<div id="modal14" class="modal modal2">
+  <div class="title-close-btn">
+    <span class="mod-title">Admin Panel</span>
+    <div class="close-modal-btn">
+      <span class="material-symbols-outlined">close</span>
+    </div>
+  </div>
+  <div class="modal-content-admin">
+  
+
+    
+  </div>
+  <div class="modal-buttons">
+    <button>No</button>
+    <button>Yes</button>
+  </div>
+</div>
+
+
+<!-- End of Admin Settings Modal  -->
 
 <!-- Admin Panel Modal Styling  -->
 

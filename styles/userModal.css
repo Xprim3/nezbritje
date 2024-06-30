@@ -496,17 +496,95 @@ form {
   border-bottom-color: #d7d7d7;
 }
 
-
-
-
-
-
-
-
-
-
+/*--------------------------------------------------------------
+# End of  Product Modal section Styling
+--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
-# End of  Product Modal section Styling
+# Add Product Modal Styling
+--------------------------------------------------------------*/
+
+.add-product-container {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  padding: 25px 0;
+}
+
+.add-product-container .add-input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 8px;
+
+}
+
+.add-product-container .add-input-group label {
+  text-align: start;
+  font-size: var(--size-labels);
+  font-weight: 700;
+  padding-left: 3px;
+}
+
+.add-product-container .add-input-group input {
+  padding: 8px;
+  font-size: var(--size-inputText);
+  border-radius: 3px;
+  background-color: #ebebeb;
+  border: none;
+  outline: none;
+}
+
+.add-product-container .add-input-group input::placeholder {
+  color: #333;
+}
+
+.add-product-container .add-input-group input:focus {
+  outline: solid 1px #C6435D;
+}
+
+.add-product-container .add-input-group .add-forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.add-product-container .add-forgot a {
+  color: #C6435D;
+  text-decoration: none;
+  font-size: var(--size-helpText);
+}
+
+.add-product-container .add-signBtn {
+  display: block;
+  padding: 0.5rem 4.5rem;
+  background-color: #C6435D;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.add-product-container .add-privacy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  row-gap: 15px;
+  font-size: 0.8rem;
+  color: #000;
+  column-gap: 5px;
+  padding: 5px 20px 10px 20px;
+}
+
+/*--------------------------------------------------------------
+# End of Add Product Modal Styling
 --------------------------------------------------------------*/
