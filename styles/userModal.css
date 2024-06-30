@@ -386,7 +386,8 @@ form {
 }
 
 .Productnavbox {
-  margin-top: 25px;
+  position: absolute;
+  bottom: 10px;
 }
 
 .inProductnavbtn {
@@ -395,7 +396,6 @@ form {
   align-items: center;
   column-gap: 15px;
   padding: 15px;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .visible {
@@ -439,7 +439,7 @@ form {
 .product-form-container {
   display: flex;
   align-items: center;
-  padding: 0px 25px 65px 25px;
+  padding: 0px 25px 95px 25px;
   overflow: auto;
   row-gap: 15px;
 }
