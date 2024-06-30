@@ -362,29 +362,26 @@ form {
 # Filter Modal Styling
 --------------------------------------------------------------*/
 
-.FilterSection {
+.chip-container {
   display: flex;
-  width: 100%;
-  flex-direction: column;
-  row-gap: 20px;
-  font-family: var(--font-default);
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 5px;
 }
 
-.FilterSection tbody tr {
-  display: flex;
-  align-items: start;
-  padding: 12px 10px;
-  border-bottom-style: solid;
-  justify-content: space-between;
-  border-bottom-width: 1px;
-  border-bottom-color: #ebebeb;
+.chip {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.FilterSection th {
-  display: inline;
-  font-size: 1.3rem;
-  color: brown;
-  font-weight: 700;
+.chip.selected {
+  background-color: #C6435D;
+  color: #fff;
 }
 
 
@@ -399,7 +396,7 @@ form {
 .product-form-container {
   display: flex;
   align-items: center;
-  padding: 0px 25px 35px 25px;
+  padding: 0px 25px 65px 25px;
   overflow: auto;
   row-gap: 15px;
 }
