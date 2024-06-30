@@ -181,6 +181,12 @@
   border-radius: 25px;
 }
 
+@media screen and (min-width: 1525px){
+  .close-modal-btn {
+    right: 25px;
+  }
+  
+}
 
 /*--------------------------------------------------------------
 # End of Title and Close Button Styling 
