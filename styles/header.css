@@ -70,7 +70,9 @@ header button {
   padding: 15px;
   column-gap: 10px;
   color: white;
+  flex-wrap: nowrap;
 }
+
 
 .cartHeader img {
   width: 140px;
