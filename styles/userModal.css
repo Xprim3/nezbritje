@@ -170,13 +170,15 @@
 }
 
 .close-modal-btn {
-  padding: 10px;
+  padding: 5px;
   position: absolute;
-  top: 6px;
-  right: 5px;
+  top: 8px;
+  right: 10px;
   display: flex;
+  background-color: rgb(228, 228, 228);
   align-items: center;
   cursor: pointer;
+  border-radius: 25px;
 }
 
 
@@ -441,7 +443,7 @@ form {
 .product-form-container {
   display: flex;
   align-items: center;
-  padding: 0px 25px 95px 25px;
+  padding: 25px 25px 95px 25px;
   overflow: auto;
   row-gap: 15px;
 }
