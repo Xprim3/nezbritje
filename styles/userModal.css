@@ -388,6 +388,7 @@ form {
 .Productnavbox {
   position: absolute;
   bottom: 10px;
+  background-color: var(--color-font);
 }
 
 .inProductnavbtn {
