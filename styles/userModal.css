@@ -451,7 +451,7 @@ form {
 .product-form-container {
   display: flex;
   align-items: center;
-  padding: 25px 25px 95px 25px;
+  padding: 25px 25px 110px 25px;
   overflow: auto;
   position: relative;
   row-gap: 15px;
