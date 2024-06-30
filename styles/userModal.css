@@ -509,7 +509,11 @@ form {
   display: flex;
   height: auto;
   flex-direction: column;
-  padding: 25px 0;
+  padding: 15px 0;
+}
+
+.add-product-container form {
+  row-gap: 21px;
 }
 
 .add-product-container .add-input-group {
