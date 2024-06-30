@@ -47,8 +47,8 @@
   position: relative;
   border-radius: 10px;
   gap: 14px;
-  background-color: rgb(238, 238, 238);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .cartSection td {
@@ -94,8 +94,9 @@
   padding: 15px 0 15px 0;
   margin: 0 21px;
   gap: 15px;
-  background-color: rgb(238, 238, 238);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .tprBox {

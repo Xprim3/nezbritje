@@ -10,7 +10,7 @@
 # Header Section Styling
 --------------------------------------------------------------*/
 
-.indexHeader {
+header { 
   display: flex;
   position: sticky;
   top: 0;
@@ -20,19 +20,6 @@
   align-items: center;
   background-color: var(--color-bck);
   row-gap: 10px;
-  padding: 10px 15px;
-}
-
-header { 
-  display: flex;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-bck);
-  row-gap: 20px;
   padding: 10px 15px;
 }
 
@@ -67,7 +54,6 @@ header button {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
   column-gap: 10px;
   color: white;
   flex-wrap: nowrap;
