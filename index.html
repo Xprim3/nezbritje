@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Ne Zbritje</title>
 
     <meta content="" name="description">
@@ -1064,7 +1064,20 @@
 
   <!-- End of Sendwich Menu Toggle Script -->
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    let lastTouchEnd = 0;
 
+    document.addEventListener('touchend', function (event) {
+        let now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+      }, false);
+    });
+
+  </script>
 
   <!-- Bottom Navigation Button Script -->
 
