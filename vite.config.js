@@ -12,8 +12,6 @@ export default defineConfig({
         
         // Other pages inside the pages folder
         cart: resolve(__dirname, 'pages/cart.html'),
-        product: resolve(__dirname, 'pages/product.html'),
-        checkout: resolve(__dirname, 'pages/checkout.html'),
         
         // Optionally, add JS entry points if needed
         uicomponents: resolve(__dirname, 'src/uicomponents.js'),
