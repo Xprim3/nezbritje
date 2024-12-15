@@ -2,21 +2,31 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/',  // Ensure that all links resolve from the root
+
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),           // Main entry file
-        cart: resolve(__dirname, 'public/cart.html'),     
-        uicomponents: resolve(__dirname, 'src/uicomponents.js'), // Entry for your UI components JavaScript
+        // Main entry file at the root
+        main: resolve(__dirname, 'index.html'),  
+        
+        // Other pages inside the pages folder
+        cart: resolve(__dirname, 'pages/cart.html'),
+        product: resolve(__dirname, 'pages/product.html'),
+        checkout: resolve(__dirname, 'pages/checkout.html'),
+        
+        // Optionally, add JS entry points if needed
+        uicomponents: resolve(__dirname, 'src/uicomponents.js'),
       },
       output: {
-        dir: 'dist',
+        dir: 'dist',  // Output directory for the built files
       }
     },
   },
+
   resolve: {
     alias: {
-      '@components': resolve(__dirname, 'src/components'), // Alias for easier imports
+      '@components': resolve(__dirname, 'src/components'),  // For easier imports
     },
   },
-})
+});
