@@ -1,11 +1,11 @@
-import '../styles/normalize.css';
-import '../styles/general.css';
-import '../styles/utilis.css';
-import '../styles/header.css';
-import '../styles/mainSection.css';
-import '../styles/bottomNav.css';
+import '../src/components/styles/normalize.css';
+import '../src/components/styles/general.css';
+import '../src/components/styles/utilis.css';
+import '../src/components/styles/header.css';
+import '../src/components/styles/mainSection.css';
+import '../src/components/styles/bottomNav.css';
+import '../src/components/styles/adminNav.css';
+import '../src/components/styles/controls.css';
+import '../src/components/styles/shopping-cart.css';
 
-import '../styles/userModal.css';
-import '../styles/adminNav.css';
-import '../styles/controls.css';
-import '../styles/shopping-cart.css';
+
