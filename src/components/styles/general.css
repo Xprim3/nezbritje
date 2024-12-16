@@ -67,6 +67,13 @@ body {
   background-color: var(--color-body);
 }
 
+body {
+  background-image: url('/public/images/zbritjeBck.svg');
+  background-size: cover; /* Scales to fit */
+  background-position: center; /* Centers image */
+  background-repeat: no-repeat; /* Prevents tiling */
+}
+
 body::-webkit-scrollbar {
   width: var(--sb-size);
 }
