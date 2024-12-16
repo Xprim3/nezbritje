@@ -331,7 +331,7 @@ form {
   font-size: var(--size-inputText);
   line-height: 1.15;
   overflow: visible;
-  padding: 8px 15px;
+  padding: 8px 35px;
   position: relative;
   text-align: center;
   text-transform: none;
