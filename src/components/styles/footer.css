@@ -1,0 +1,42 @@
+footer {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px 10px 40px 10px;
+  color: #333;
+}
+
+.payment-methods p {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.logos {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60px; /* Adjust as needed */
+  margin: 0 5px;
+}
+
+.terms-privacy {
+  background-color: #eaeaea;
+  padding: 10px;
+}
+
+.terms-privacy a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  margin: 0 5px;
+}
+
+.terms-privacy span {
+  color: #ccc;
+}
+
+.copyright p {
+  margin-top: 15px;
+  font-size: 0.9em;
+}

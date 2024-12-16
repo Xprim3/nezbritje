@@ -47,14 +47,14 @@
 # General
 --------------------------------------------------------------*/
 
+html {
+  height: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-html, body {
-  height: auto;
 }
 
 body {
@@ -62,16 +62,16 @@ body {
   flex-direction: column;
   max-width: 768px;
   position: relative;
+  height: 100%;
   margin: 0 auto;
-  height: auto;
   background-color: var(--color-body);
 }
 
 body {
-  background-image: url('/public/images/zbritjeBck.svg');
+  background-image: url('/images/zbritjeBck.svg');
   background-size: cover; /* Scales to fit */
   background-position: center; /* Centers image */
-  background-repeat: no-repeat; /* Prevents tiling */
+
 }
 
 body::-webkit-scrollbar {
