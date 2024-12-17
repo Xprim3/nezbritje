@@ -10,7 +10,7 @@
 .dropdown-button {
   cursor: pointer;
   text-decoration: none;
-  display: inline-block;
+
 }
 
 .HeaderButtonDp {
@@ -70,7 +70,6 @@
 }
 
 .productDropBtn {
-  display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
