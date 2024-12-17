@@ -1,0 +1,75 @@
+/* Base styles for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button or link styles */
+.dropdown-button {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.HeaderButtonDp {
+  color: white;
+}
+
+/* Dropdown content styles */
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  text-wrap: nowrap;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  opacity: 0;
+  border-radius: 5px;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+  border-radius: 5px;
+}
+
+.headerProfile {
+  right: 5px;
+}
+
+.dropdown-option {
+  color: black;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  display: block;
+}
+
+.dropdown-option:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown when the dropdown has the 'open' class */
+.dropdown.open .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s 0s;
+}
+
+/* Dropdown Base for Product Cards */
+
+.productEditDp {
+  position: absolute;;
+  top: 0px;
+  right: 0px;
+}
+
+.productDropBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  padding: 8px 10px;
+  color: var(--color-button);
+}

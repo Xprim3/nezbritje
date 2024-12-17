@@ -42,8 +42,14 @@
       <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad open-modal-btn" data-target="#modal7">add</span></button>
       <div class="flex-alg-center">
         <a href = "/pages/cart.html"><button><span class="material-symbols-outlined footer-icon btn-pad">shopping_cart</span></button></a>
-        <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad" id="toggleButton">account_circle</span></button>
         <button><span class="material-symbols-outlined user-panel footer-icon btn-pad open-modal-btn" data-target="#modal9">login</span></button>
+        <div class="dropdown">
+          <button class="dropdown-button HeaderButtonDp"><span class="material-symbols-outlined admin-panel footer-icon btn-pad">account_circle</span></button>
+          <div class="dropdown-content headerProfile">
+            <button class="dropdown-option">Option 1</button>
+            <button class="dropdown-option open-modal-btn" data-target="#modal9">Login</button>
+          </div>
+        </div>
       </div>
       <div id="buttonsContainer" class="admin-panel">
         <button class="open-modal-btn" data-target="#modal14">Settings</button>
@@ -141,9 +147,12 @@
               <img class="productImage" src="/images/1.png" alt="Proudct Image">
               <div class="discount-label">-14%</div>
               <!-- Admin Edit Button -->
-              <div>
-                <button class="admin-panel deleteBtn open-modal-btn" data-target="#modal3"><span class="material-symbols-outlined">delete</span></button>
-                <button class="admin-panel editBtn open-modal-btn" data-target="#modal2"><span class="material-symbols-outlined">edit</span></button>
+              <div class="dropdown productEditDp">
+                <button class="admin-panel dropdown-button productDropBtn"><span class="material-symbols-outlined">more_horiz</span></button>
+                <div class="dropdown-content">
+                  <button class="dropdown-option">Option 1</button>
+                  <button class="dropdown-option">Login</button>
+                </div>
               </div>
               <!-- End -->
             </div>
@@ -171,9 +180,6 @@
     </main>
 
     <footer>
-      <div class="logoContainer">
-        <a href="index.html"><img src="public/images/NeZbritjeLogo.svg" alt="Visa" class="logo"></a>
-      </div>
       <div class="terms-privacy">
         <a href="#">Termet dhe Kushtet</a>
         <span>|</span>
@@ -622,60 +628,62 @@
 
   <!-- Quantity and Add to cart Button Script -->
   <script>
-    document.querySelectorAll('.cart-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        const parent = this.closest('.product-card');
-        const addToCartBtn = parent.querySelector('.cart-btn');
-        const quantityControls = parent.querySelector('.quantity-controls');
-
-        addToCartBtn.style.display = 'none';
-        quantityControls.style.display = 'flex';
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.cart-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const parent = this.closest('.product-card');
+          const addToCartBtn = parent.querySelector('.cart-btn');
+          const quantityControls = parent.querySelector('.quantity-controls');
+    
+          addToCartBtn.style.display = 'none';
+          quantityControls.style.display = 'flex';
+        });
       });
-    });
-
-    document.querySelectorAll('.quantity-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        const parent = this.closest('.product-card');
-        const quantityInput = parent.querySelector('.quantity-input');
-        const addToCartBtn = parent.querySelector('.cart-btn');
-        const quantityControls = parent.querySelector('.quantity-controls');
-
-        let currentValue = parseInt(quantityInput.value) || 1; // Default to 1 if value is not a number
-
-        if (btn.classList.contains('highCon')) {
-          currentValue++;
-        } else {
-          if (currentValue > 1) {
-            currentValue--;
+    
+      document.querySelectorAll('.quantity-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const parent = this.closest('.product-card');
+          const quantityInput = parent.querySelector('.quantity-input');
+          const addToCartBtn = parent.querySelector('.cart-btn');
+          const quantityControls = parent.querySelector('.quantity-controls');
+    
+          let currentValue = parseInt(quantityInput.value) || 1; // Default to 1 if value is not a number
+    
+          if (btn.classList.contains('highCon')) {
+            currentValue++;
           } else {
-            addToCartBtn.style.display = 'block';
-            quantityControls.style.display = 'none';
+            if (currentValue > 1) {
+              currentValue--;
+            } else {
+              addToCartBtn.style.display = 'block';
+              quantityControls.style.display = 'none';
+            }
           }
-        }
-
-        quantityInput.value = currentValue;
+    
+          quantityInput.value = currentValue;
+        });
+      });
+    
+      // Prevent non-numeric input and freezing with optimized input handling
+      const quantityInputs = document.querySelectorAll('.quantity-input');
+      quantityInputs.forEach(input => {
+        input.addEventListener('input', function(event) {
+          const value = event.target.value;
+    
+          // Ensure only valid numbers are allowed
+          if (!/^\d+$/.test(value)) {
+            event.target.value = value.replace(/[^\d]/g, ''); // Remove any non-numeric characters
+            return;
+          }
+    
+          // Limit the maximum number input (e.g., set a max of 99)
+          if (parseInt(value) > 99) {
+            event.target.value = 99;
+          }
+        });
       });
     });
-
-    // Prevent non-numeric input and freezing with optimized input handling
-    const quantityInputs = document.querySelectorAll('.quantity-input');
-    quantityInputs.forEach(input => {
-      input.addEventListener('input', function(event) {
-        const value = event.target.value;
-
-        // Ensure only valid numbers are allowed
-        if (!/^\d+$/.test(value)) {
-          event.target.value = value.replace(/[^\d]/g, ''); // Remove any non-numeric characters
-          return;
-        }
-
-        // Limit the maximum number input (e.g., set a max of 99)
-        if (parseInt(value) > 99) {
-          event.target.value = 99;
-        }
-      });
-    });
-  </script>
+    </script>
 
 
   <!-- End of  Quantity and Add to cart Button Script -->
@@ -694,32 +702,6 @@
 
     </script>
   <!-- End of  Filter Chips Script -->
-
-
-  <!-- Sendwich Menu Toggle Script -->
-  <script>
-    const buttonsContainer = document.getElementById('buttonsContainer');
-    const toggleButton = document.getElementById('toggleButton');
-
-    toggleButton.addEventListener('click', (event) => {
-      buttonsContainer.classList.toggle('open');
-      event.stopPropagation(); // Prevent click from propagating to the document
-    });
-
-    window.addEventListener('scroll', () => {
-      if (buttonsContainer.classList.contains('open')) {
-        buttonsContainer.classList.remove('open');
-      }
-    });
-
-    document.addEventListener('click', (event) => {
-      if (!buttonsContainer.contains(event.target) && !toggleButton.contains(event.target)) {
-        buttonsContainer.classList.remove('open');
-      }
-    });
-  </script>
-
-  <!-- End of Sendwich Menu Toggle Script -->
 
   <!-- Disable Double click to zoom script -->
   <script>
