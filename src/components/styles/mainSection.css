@@ -49,6 +49,22 @@ main {
 .cat-wrap {
     padding: 10px 15px 15px 15px;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.all-fBtn {
+    align-items: center;
+    justify-content: center;
+    padding: 14px 10px;
+    text-wrap: nowrap;
+    border-radius: 5px;
+    background-color: rgb(198, 67, 93);
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .cat-container {
