@@ -2,6 +2,8 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 1;
+  pointer-events: auto;
 }
 
 /* Button or link styles */
@@ -24,6 +26,7 @@
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   opacity: 0;
+  margin-top: 2px;
   border-radius: 5px;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0s 0.3s;
@@ -43,10 +46,12 @@
   cursor: pointer;
   text-align: left;
   display: block;
+  transition: all 0.1s ease;
 }
 
 .dropdown-option:hover {
-  background-color: #f1f1f1;
+  opacity: 0.7;
+  color: var(--color-button);
 }
 
 /* Show the dropdown when the dropdown has the 'open' class */
