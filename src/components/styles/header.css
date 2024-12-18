@@ -61,3 +61,23 @@ header button {
   height: 50px;
   object-fit: cover;
 }
+
+.shopping-cart-container {
+  position: relative;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.notification-counter {
+  position: absolute;
+  text-align: center;
+  top: 2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+}

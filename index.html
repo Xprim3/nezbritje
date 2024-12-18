@@ -41,13 +41,19 @@
       </div>
       <button><span class="material-symbols-outlined admin-panel footer-icon btn-pad open-modal-btn" data-target="#modal7">add</span></button>
       <div class="flex-alg-center">
-        <a href = "/pages/cart.html"><button><span class="material-symbols-outlined footer-icon btn-pad">shopping_cart</span></button></a>
+        <!--TODO: nuk klikohet notifikimi me button bashk me rregullu -->
+        <div class="shopping-cart-container">
+          <div class="notification-counter">
+            <span>5</span>
+          </div>
+          <a href="/pages/cart.html"><button><span class="material-symbols-outlined footer-icon btn-pad">shopping_cart</span></button></a>
+        </div>
         <button><span class="material-symbols-outlined user-panel footer-icon btn-pad open-modal-btn" data-target="#modal9">login</span></button>
         <div class="dropdown">
           <button class="dropdown-button HeaderButtonDp"><span class="material-symbols-outlined admin-panel footer-icon btn-pad">account_circle</span></button>
           <div class="dropdown-content headerProfile">
-            <button class="dropdown-option">Settings</button>
-            <button class="dropdown-option open-modal-btn" data-target="#modal9">Login</button>
+            <button class="dropdown-option open-modal-btn" data-target="#modal14">Settings</button>
+            <button class="dropdown-option open-modal-btn" data-target="#modal11">Logout</button>
           </div>
         </div>
       </div>
@@ -77,31 +83,31 @@
         <button class="all-fBtn">Gjitha</button>
         <div class="cat-container">
           <div class="cat-profile">
-            <img src="public/images/emona.jpg" alt="">
+            <img src="/images/emona.jpg" alt="">
           </div>
           <div class="cat-profile">
             <img src="/images/etc.png" alt="">
           </div>
           <div class="cat-profile">
-            <img src="public/images/meridian.jpg" alt="">
+            <img src="/images/meridian.jpg" alt="">
           </div>
           <div class="cat-profile">
-            <img src="public/images/spar kosova.jpg" alt="">
+            <img src="/images/spar kosova.jpg" alt="">
           </div>
           <div class="cat-profile">
-            <img src="public/images/viva fresh.jpg" alt="">
+            <img src="/images/viva fresh.jpg" alt="">
           </div>
           <div class="cat-profile">
             <img src="/images/etc.png" alt="">
           </div>
           <div class="cat-profile">
-            <img src="public/images/meridian.jpg" alt="">
+            <img src="/images/meridian.jpg" alt="">
           </div>
           <div class="cat-profile">
-            <img src="public/images/spar kosova.jpg" alt="">
+            <img src="/images/spar kosova.jpg" alt="">
           </div>
           <div class="cat-profile">
-            <img src="public/images/viva fresh.jpg" alt="">
+            <img src="/images/viva fresh.jpg" alt="">
           </div>
 
         </div>
@@ -115,7 +121,6 @@
         <div class="product-card">
           <div class="open-modal-btn" data-target="#modal1">
             <div class="prod-img-box">
-              <img class="originFlag" src="/icons/greece.png" alt="Origin Flag Icon">
               <img class="productImage" src="/images/1.png" alt="Proudct Image">
               <div class="discount-label">-14%</div>
               <div class="dropdown productEditDp">
@@ -144,108 +149,6 @@
             </div>
           </div>
         </div>
-
-        <div class="product-card">
-          <div class="open-modal-btn" data-target="#modal1">
-            <div class="prod-img-box">
-              <img class="originFlag" src="/icons/greece.png" alt="Origin Flag Icon">
-              <img class="productImage" src="/images/1.png" alt="Proudct Image">
-              <div class="discount-label">-14%</div>
-              <div class="dropdown productEditDp">
-                <button class="dropdown-button admin-panel productDropBtn"><span class="material-symbols-outlined">more_horiz</span></button>
-                <div class="dropdown-content">
-                  <button class="dropdown-option open-modal-btn" data-target="#modal2">Edit</button>
-                  <button class="dropdown-option open-modal-btn" data-target="#modal3">Delete</button>
-                </div>
-              </div>
-            </div>
-            <div class="product-info">
-              <p>Deri me 25/05/1989</p>
-              <h5>Olympus Jogurt Grek 0% Yndyrë 12/150gr</h5>
-              <div>
-                <span>€3.99</span>
-                <strike>9.20</strike>
-              </div>
-            </div>
-          </div>
-          <div class="cart-button">
-            <button class="cart-btn">Add to Cart</button>
-            <div class="quantity-controls">
-              <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
-              <input type="number" class="quantity-input" value="1" readonly>
-              <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="open-modal-btn" data-target="#modal1">
-            <div class="prod-img-box">
-              <img class="originFlag" src="/icons/greece.png" alt="Origin Flag Icon">
-              <img class="productImage" src="/images/1.png" alt="Proudct Image">
-              <div class="discount-label">-14%</div>
-              <div class="dropdown productEditDp">
-                <button class="dropdown-button admin-panel productDropBtn"><span class="material-symbols-outlined">more_horiz</span></button>
-                <div class="dropdown-content">
-                  <button class="dropdown-option open-modal-btn" data-target="#modal2">Edit</button>
-                  <button class="dropdown-option open-modal-btn" data-target="#modal3">Delete</button>
-                </div>
-              </div>
-            </div>
-            <div class="product-info">
-              <p>Deri me 25/05/1989</p>
-              <h5>Olympus Jogurt Grek 0% Yndyrë 12/150gr</h5>
-              <div>
-                <span>€3.99</span>
-                <strike>9.20</strike>
-              </div>
-            </div>
-          </div>
-          <div class="cart-button">
-            <button class="cart-btn">Add to Cart</button>
-            <div class="quantity-controls">
-              <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
-              <input type="number" class="quantity-input" value="1" readonly>
-              <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="open-modal-btn" data-target="#modal1">
-            <div class="prod-img-box">
-              <img class="originFlag" src="/icons/greece.png" alt="Origin Flag Icon">
-              <img class="productImage" src="/images/1.png" alt="Proudct Image">
-              <div class="discount-label">-14%</div>
-              <div class="dropdown productEditDp">
-                <button class="dropdown-button admin-panel productDropBtn"><span class="material-symbols-outlined">more_horiz</span></button>
-                <div class="dropdown-content">
-                  <button class="dropdown-option open-modal-btn" data-target="#modal2">Edit</button>
-                  <button class="dropdown-option open-modal-btn" data-target="#modal3">Delete</button>
-                </div>
-              </div>
-            </div>
-            <div class="product-info">
-              <p>Deri me 25/05/1989</p>
-              <h5>Olympus Jogurt Grek 0% Yndyrë 12/150gr</h5>
-              <div>
-                <span>€3.99</span>
-                <strike>9.20</strike>
-              </div>
-            </div>
-          </div>
-          <div class="cart-button">
-            <button class="cart-btn">Add to Cart</button>
-            <div class="quantity-controls">
-              <button class="quantity-btn lowCon"><span class="material-symbols-outlined">remove</span></button>
-              <input type="number" class="quantity-input" value="1" readonly>
-              <button class="quantity-btn highCon"><span class="material-symbols-outlined">add</span></button>
-            </div>
-          </div>
-        </div>
-
-
-
 
       </section>
       </div>
@@ -296,7 +199,7 @@
     <span class="material-symbols-outlined">close</span>
   </div>
   <div class="modal-content-user product-form-container">
-    <img src="/images/3.png" alt="">
+    <img class="productImg" src="/images/3.png" alt="">
     <div class="product-form-group">
       <h3>Greek Yogurt 10%</h3>
 
@@ -321,7 +224,10 @@
 
       <div class="space-btw">
         <p>Origjina:</p>
-        <p>Republic of Kosova</p>
+        <div class="originContainer">
+          <img class="originFlag" src="public/icons/greece.png" alt="">
+        </div>
+
       </div>
 
       <div class="space-btw">

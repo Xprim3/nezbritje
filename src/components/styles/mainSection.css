@@ -156,6 +156,10 @@ main {
     position: relative;
 }
 
+.open-modal-btn {
+    cursor: pointer;
+}
+
 .prod-img-box {
     display: flex;
     align-items: center;
@@ -165,13 +169,17 @@ main {
     position: relative;
 }
 
-.originFlag {
-    display: block;
+.originContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 20px;
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
+}
+
+.originContainer img {
+    width: 100%;
+    height: 100%;
     object-fit: fill;
     border-radius: 3px;
 }
