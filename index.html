@@ -260,94 +260,81 @@
       <span class="material-symbols-outlined">close</span>
     </div>
   </div>
+
   <div class="modal-content-admin">
     <div class="input-g-container">
-
-
       <form>
-
-
-        <div class="d-flex flex-column w-100">
-          <label for="product-name">Emri Produktit</label>
-          <input type="text" id="product-name" name="product-name" required>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="d-flex flex-column w-100">
+            <label for="product-name">Emri Produktit</label>
+            <input type="text" id="product-name" name="product-name" required>
+          </div>
+          <div class="d-flex flex-column w-100">
+            <label for="product-image">Ngarko Imazhin</label>
+            <input type="file" id="product-image" name="product-image" accept="image/*" required>
+          </div>
         </div>
-
         <div class="d-flex flex-row flex-between col-gap-10">
           <div class="d-flex flex-column w-100">
             <label for="product-price">Qmimi Produktit</label>
             <input type="number" id="product-price" name="product-price" required>
           </div>
-  
           <div class="add-input-group d-flex flex-column w-100">
             <label for="product-discount">Zbritja Produktit</label>
             <input type="number" id="product-discount" name="product-discount" required>
           </div>
         </div>
-
         <div class="d-flex flex-row flex-between col-gap-10">
           <div class="d-flex flex-column w-100">
             <label for="product-expiry">Add data</label>
             <input type="date" id="product-expiry" name="product-expiry" class="responsive-date-input" required>
           </div>
-          
           <div class="d-flex flex-column w-100">
             <label for="product-expiry">Data e Skadimit</label>
             <input type="date" id="product-expiry" name="product-expiry" class="responsive-date-input" required>
           </div>
         </div>
-        
         <div class="d-flex flex-column w-100">
-          <label for="city">Origjina</label>
-          <select id="city" name="city" required>
-            <option value="TeGjitha">Te Gjitha</option>
-              <option value="tirana">Albania</option>
-              <option value="prishtina">Serbia</option>
-              <option value="shkodra">Macedonia</option>
-              <option value="durres">Belgium</option>
-              <option value="vlora">England</option>
-          </select>
+            <label for="city">Origjina</label>
+            <select id="city" name="city" class="select-input" required>
+                <option value="TeGjitha">Te Gjitha</option>
+                <option value="tirana">Albania</option>
+                <option value="prishtina">Serbia</option>
+                <option value="shkodra">Macedonia</option>
+                <option value="durres">Belgium</option>
+                <option value="vlora">England</option>
+            </select>
         </div>
-
         <div class="d-flex flex-row flex-between col-gap-10">
           <div class="d-flex flex-column w-100">
             <label for="city">Marketi</label>
-            <select id="city" name="city" required>
-              <option value="TeGjitha">Te Gjitha</option>
+            <select id="city" name="city" class="select-input" required>
+                <option value="TeGjitha">Te Gjitha</option>
                 <option value="tirana">ETC</option>
                 <option value="prishtina">Viva Fresh</option>
-                <option value="shkodra">Super Viva</option>
+                <option value="shkodra">Spar</option>
                 <option value="durres">Meridian</option>
-                <option value="vlora">Spar</option>
+                <option value="vlora">Super Viva</option>
             </select>
-          </div>
-
-          <div class="d-flex flex-column w-100">
-            <label for="city">Qyteti</label>
-            <select id="city" name="city" required>
-                <option value="TeGjitha">Te Gjitha</option>
-                <option value="prishtina">Prishtina</option>
-                <option value="shkodra">Gjilani</option>
-                <option value="durres">Prizreni</option>
-                <option value="vlora">Peja</option>
-            </select>
-          </div>
         </div>
-
-
-
-
         <div class="d-flex flex-column w-100">
-          <label for="product-name">Linku Zbritjes</label>
-          <input type="link" id="product-name" name="product-name" required>
+          <label for="city">Lokacioni</label>
+          <select id="city" name="city" class="select-input" required>
+              <option value="TeGjitha">Te Gjitha</option>
+              <option value="tirana">Ferizaj</option>
+              <option value="prishtina">Prishtina</option>
+              <option value="shkodra">Gjilani</option>
+              <option value="durres">Kaqaniki</option>
+              <option value="vlora">Peja</option>
+          </select>
+          </div>
+            </div>
+            <div class="d-flex flex-column w-100">
+              <label for="product-name">Linku Zbritjes</label>
+              <input type="link" id="product-name" name="product-name" required>
+            </div>
+          </form>
         </div>
-
-        
-
-
-
-        
-      </form>
-    </div>
     
   </div>
   <div class="modal-buttons">
@@ -418,72 +405,88 @@
       <span class="material-symbols-outlined">close</span>
     </div>
   </div>
+  
   <div class="modal-content-admin">
-    <div class="add-product-container">
+    <div class="input-g-container">
       <form>
-        <div class="add-input-group">
-          <label for="product-name">Emri Produktit</label>
-          <input type="text" id="product-name" name="product-name" required>
-        </div>
-
-        <div class="add-input-group">
-          <label for="product-price">Qmimi Produktit</label>
-          <input type="number" id="product-price" name="product-price" required>          
-        </div>
-
-        <div class="add-input-group">
-          <label for="product-discount">Zbritja Produktit</label>
-          <input type="number" id="product-discount" name="product-discount" required>
-        </div>
-
-        <div class="add-input-group">
-          <label for="product-unit">Sasia Produktit</label>
-          <input type="text" id="product-unit" name="product-unit" required>
-        </div>
-        
-        <div class="add-input-group">
-          <label for="product-image">Product Image</label>
-          <input type="file" id="product-image" name="product-image" accept="image/*" required>
-        </div>
-
-        <div class="add-input-group">
-          <label for="product-origin">Origjina Produktit</label>
-          <input type="text" id="product-origin" name="product-origin" required>
-        </div>
-
-        <div style="display: flex;flex-direction: row;column-gap: 20px;">
-          <div class="add-input-group">
-            <label for="product-expiry">Added Produkt</label>
-            <input type="date" id="product-expiry" name="product-expiry" required>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="d-flex flex-column w-100">
+            <label for="product-name">Emri Produktit</label>
+            <input type="text" id="product-name" name="product-name" required>
           </div>
-          <div class="add-input-group">
-            <label for="product-expiry">Expires Produkt</label>
-            <input type="date" id="product-expiry" name="product-expiry" required>
+          <div class="d-flex flex-column w-100">
+            <label for="product-image">Ngarko Imazhin</label>
+            <input type="file" id="product-image" name="product-image" accept="image/*" required>
           </div>
         </div>
-
-        <div class="add-input-group">
-          <label for="product-location">Lokacioni Produktit</label>
-          <input type="text" id="product-location" name="product-location" required>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="d-flex flex-column w-100">
+            <label for="product-price">Qmimi Produktit</label>
+            <input type="number" id="product-price" name="product-price" required>
+          </div>
+          <div class="add-input-group d-flex flex-column w-100">
+            <label for="product-discount">Zbritja Produktit</label>
+            <input type="number" id="product-discount" name="product-discount" required>
+          </div>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="d-flex flex-column w-100">
+            <label for="product-expiry">Add data</label>
+            <input type="date" id="product-expiry" name="product-expiry" class="responsive-date-input" required>
+          </div>
+          <div class="d-flex flex-column w-100">
+            <label for="product-expiry">Data e Skadimit</label>
+            <input type="date" id="product-expiry" name="product-expiry" class="responsive-date-input" required>
+          </div>
+        </div>
+        <div class="d-flex flex-column w-100">
+            <label for="city">Origjina</label>
+            <select id="city" name="city" class="select-input" required>
+                <option value="TeGjitha">Te Gjitha</option>
+                <option value="tirana">Albania</option>
+                <option value="prishtina">Serbia</option>
+                <option value="shkodra">Macedonia</option>
+                <option value="durres">Belgium</option>
+                <option value="vlora">England</option>
+            </select>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="d-flex flex-column w-100">
+            <label for="city">Marketi</label>
+            <select id="city" name="city" class="select-input" required>
+                <option value="TeGjitha">Te Gjitha</option>
+                <option value="tirana">ETC</option>
+                <option value="prishtina">Viva Fresh</option>
+                <option value="shkodra">Spar</option>
+                <option value="durres">Meridian</option>
+                <option value="vlora">Super Viva</option>
+            </select>
+        </div>
+        <div class="d-flex flex-column w-100">
+          <label for="city">Lokacioni</label>
+          <select id="city" name="city" class="select-input" required>
+              <option value="TeGjitha">Te Gjitha</option>
+              <option value="tirana">Ferizaj</option>
+              <option value="prishtina">Prishtina</option>
+              <option value="shkodra">Gjilani</option>
+              <option value="durres">Kaqaniki</option>
+              <option value="vlora">Peja</option>
+          </select>
+          </div>
+            </div>
+            <div class="d-flex flex-column w-100">
+              <label for="product-name">Linku Zbritjes</label>
+              <input type="link" id="product-name" name="product-name" required>
+            </div>
+          </form>
         </div>
 
-        <div class="add-input-group">
-          <label for="product-link">Linku Produktit</label>
-          <input type="text" id="product-link" name="product-link" required>
-        </div>
-
-        <div class="add-input-group">
-          <label for="product-store">Emri Marketit</label>
-          <input type="text" id="product-store" name="product-store" required>
-        </div> 
-      </form>
+      </div>
+      <div class="modal-buttons">
+        <button>No</button>
+        <button>Yes</button>
+      </div>  
     </div>
-  </div>
-  <div class="modal-buttons">
-    <button>No</button>
-    <button>Yes</button>
-  </div>  
-</div>
 <!-- End of Add Product Modal Styling  -->
 
 <!-- Filter Modal Styling  -->

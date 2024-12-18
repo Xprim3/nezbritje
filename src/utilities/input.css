@@ -35,6 +35,39 @@
   border-color: #007bff;
 }
 
+/* Date Input Styling */
+.responsive-date-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.responsive-date-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.select-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.select-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
 .responsive-date-input {
   width: 100%;
   padding: 10px;
