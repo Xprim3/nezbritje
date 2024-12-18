@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+# Input Group Styling 
+--------------------------------------------------------------*/
+
+.input-g-container {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
+.input-g-container form {
+  row-gap: 21px;
+}
+
+.input-g-container label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-g-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.input-g-container input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.responsive-date-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .responsive-date-input {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
+
+/* Display Utilities */
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+
+/* Flexbox Alignment */
+.flex-center { justify-content: center; align-items: center; }
+.flex-between { justify-content: space-between; align-items: center; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-wrap { flex-wrap: wrap; }
+
+/* Width Utilities */
+.w-25 { width: 25%; }
+.w-50 { width: 50%; }
+.w-75 { width: 75%; }
+.w-100 { width: 100%; }
+
+/* Height Utilities */
+.h-25 { height: 25%; }
+.h-50 { height: 50%; }
+.h-75 { height: 75%; }
+.h-100 { height: 100%; }
+
+.col-gap-10 { column-gap: 10px; }
+
+
+
+/*--------------------------------------------------------------
+# End of Input Group Styling
+--------------------------------------------------------------*/
