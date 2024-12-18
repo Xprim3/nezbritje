@@ -516,12 +516,18 @@ form {
   row-gap: 21px;
 }
 
+.row-input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
 .add-product-container .add-input-group {
   display: flex;
   flex-direction: column;
   width: 100%;
   row-gap: 8px;
-
 }
 
 .add-product-container .add-input-group label {
