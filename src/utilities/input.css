@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
 # General Styling
 --------------------------------------------------------------*/
-
 /* Container styling */
 .input-g-container {
   display: flex;
@@ -44,11 +43,11 @@ select.input-style {
   padding-right: 35px; /* Space for the arrow */
 }
 
-
-/* Remove focus styling instantly on click */
-select.input-style:active {
-  outline: none;
-  box-shadow: none;
+/* Focus State */
+.input-style:focus,
+select.input-style:focus {
+  border-color: var(--color-button);
+  box-shadow: none; /* Remove heavy effects */
 }
 
 /* Responsive Styling */
