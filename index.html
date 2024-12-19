@@ -286,12 +286,12 @@
         </div>
         <div class="d-flex flex-row flex-between col-gap-10">
           <div class="input-base-style d-flex flex-column w-100">
-            <label>Add data</label>
+            <label for="product-expiry">Add Data</label>
             <input type="date" id="product-expiry" name="product-expiry" class="input-style" required>
           </div>
           <div class="input-base-style d-flex flex-column w-100">
-            <label>Data e Skadimit</label>
-            <input type="date" id="product-expiry" name="product-expiry" class="input-style" required>
+            <label for="product-expiry-future">Expiry Date (1 day forward)</label>
+            <input type="date" id="product-expiry-future" name="product-expiry-future" class="input-style" required>
           </div>
         </div>
         <div class="input-base-style d-flex flex-column w-100">
@@ -734,6 +734,22 @@
         this.classList.add('selected');
       });
     }
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the current date
+      const today = new Date();
+      
+      // Set the current date for the first input
+      const currentDate = today.toISOString().split('T')[0];
+      document.getElementById('product-expiry').value = currentDate;
+      
+      // Set the date for the second input to be 1 day ahead
+      today.setDate(today.getDate() + 1); // Add one day
+      const futureDate = today.toISOString().split('T')[0];
+      document.getElementById('product-expiry-future').value = futureDate;
+    });
   </script>
 
   <!-- End of Bottom Navigation Button Script -->
