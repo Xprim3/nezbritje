@@ -178,3 +178,11 @@
   border-width: 1px;
   border-color: #007bff;
 }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .file-input, .date-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
