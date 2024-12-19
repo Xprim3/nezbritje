@@ -42,7 +42,7 @@
 .input-style:focus, .input-style select:focus {
   outline: none;
   border-width: 1px;
-  border-color: #007bff;
+  border-color: var(--color-button);
 }
 
 /* Responsive adjustments */
