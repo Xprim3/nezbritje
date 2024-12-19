@@ -10,178 +10,43 @@
 }
 
 .input-g-container form {
-  row-gap: 21px;
+  row-gap: 20px;
 }
 
-.input-g-container label {
+/*--------------------------------------------------------------
+# Input Styling 
+--------------------------------------------------------------*/
+
+/* Base style for all input elements */
+.input-style {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+}
+
+.input-base-style label {
   font-size: 1rem;
   font-weight: 700;
+  padding-left: 5px;
   color: #333;
   margin-bottom: 5px;
 }
 
-.input-g-container input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #333;
-}
-
-.input-g-container input:focus {
-  outline: none;
-  border-color: #007bff;
-}
-
-.responsive-date-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 10px;
-}
-
-@media (max-width: 600px) {
-  .responsive-date-input {
-      font-size: 14px;
-      padding: 8px;
-  }
-}
-
-/* Display Utilities */
-.d-block { display: block; }
-.d-inline { display: inline; }
-.d-flex { display: flex; }
-.d-grid { display: grid; }
-
-/* Flexbox Alignment */
-.flex-center { justify-content: center; align-items: center; }
-.flex-between { justify-content: space-between; align-items: center; }
-.flex-column { flex-direction: column; }
-.flex-row { flex-direction: row; }
-.flex-wrap { flex-wrap: wrap; }
-
-/* Width Utilities */
-.w-25 { width: 25%; }
-.w-50 { width: 50%; }
-.w-75 { width: 75%; }
-.w-100 { width: 100%; }
-
-/* Height Utilities */
-.h-25 { height: 25%; }
-.h-50 { height: 50%; }
-.h-75 { height: 75%; }
-.h-100 { height: 100%; }
-
-.col-gap-10 { column-gap: 10px; }
-
-
-
-/*--------------------------------------------------------------
-# End of Input Group Styling
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Dropdown Styling 
---------------------------------------------------------------*/
-
-/* Style the dropdown container */
-.dropdown-mod {
-  margin-bottom: 15px;
-}
-
-/* Style the label */
-.dropdown-mod label {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-/* Style the select element */
-.dropdown-mod select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #333;
-  background-color: #fff;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-/* Add a custom arrow */
-.dropdown-mod select::after {
-  content: '▼';
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-/* Focus state for the select element */
-.dropdown-mod select:focus {
+/* Focus state for the input elements */
+.input-style:focus {
   outline: none;
   border-width: 1px;
-  border-color: #007bff;
-}
-
-/* Style the options */
-.dropdown-mod select option {
-  padding: 10px;
-  font-size: 1rem;
-  color: #333;
-}
-
-/* Style the file input element */
-.file-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #333;
-  background-color: #fff;
-}
-
-/* Focus state for the file input element */
-.file-input:focus {
-  outline: none;
-  border-width: 1px;
-  border-color: #007bff;
-}
-
-/* Style the date input element */
-.date-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #333;
-  background-color: #fff;
-}
-
-/* Focus state for the date input element */
-.date-input:focus {
-  outline: none;
-  border-width: 1px;
-  border-color: #007bff;
+  border-color: var(--color-button);
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  .file-input, .date-input {
+  .input-style {
     font-size: 14px;
     padding: 8px;
   }

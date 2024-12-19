@@ -9,6 +9,7 @@ import '../src/components/dropdown/dropdown.css';
 
 // CSS utilitis
 import '../src/utilities/input.css';
+import '../src/utilities/GlobalUtilities.css';
 
 
 
