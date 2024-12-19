@@ -50,6 +50,12 @@ select.input-style:focus {
   box-shadow: none; /* Remove heavy effects */
 }
 
+/* Touchscreen-specific enhancements */
+select.input-style:active {
+  outline: none;
+  box-shadow: none;
+}
+
 /* Responsive Styling */
 @media (max-width: 600px) {
   .input-style,
