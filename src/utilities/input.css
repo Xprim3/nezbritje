@@ -4,7 +4,6 @@
 
 .input-g-container {
   display: flex;
-  height: auto;
   flex-direction: column;
   padding: 15px 0;
 }
@@ -17,6 +16,7 @@
 # Input Styling 
 --------------------------------------------------------------*/
 
+/* Label styling */
 .input-base-style label {
   font-size: 1rem;
   font-weight: 700;
@@ -25,8 +25,16 @@
   padding-left: 2px;
 }
 
-/* Base style for all input and select elements */
-.input-style, .input-style select {
+/* Base style for all inputs, selects, file inputs, and date pickers */
+.input-style, 
+select.input-style, 
+input[type="text"].input-style, 
+input[type="number"].input-style, 
+input[type="email"].input-style, 
+input[type="password"].input-style, 
+input[type="file"].input-style, 
+input[type="date"].input-style, 
+textarea.input-style {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -36,10 +44,31 @@
   color: #333;
   background-color: #fff;
   box-sizing: border-box;
+  appearance: none; /* Remove default appearance for consistency */
+  -webkit-appearance: none; /* Safari compatibility */
+  -moz-appearance: none; /* Firefox compatibility */
 }
 
-/* Focus state for the input and select elements */
-.input-style:focus, .input-style select:focus {
+/* Styling for file input to make it consistent */
+input[type="file"].input-style {
+  padding: 6px; /* Slight adjustment for file input */
+  line-height: normal; /* Align text correctly */
+}
+
+/* Add a custom arrow for dropdown (select) */
+select.input-style {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 35px; /* Account for the arrow */
+}
+
+/* Focus state for all input and select elements */
+.input-style:focus, 
+select.input-style:focus, 
+input[type="file"].input-style:focus, 
+input[type="date"].input-style:focus {
   outline: none;
   border-width: 1px;
   border-color: var(--color-button);
@@ -47,7 +76,10 @@
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  .input-style, .input-style select {
+  .input-style, 
+  select.input-style, 
+  input[type="file"].input-style, 
+  input[type="date"].input-style {
     font-size: 14px;
     padding: 8px;
   }
