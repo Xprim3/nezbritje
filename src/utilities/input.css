@@ -112,9 +112,9 @@
   font-weight: 400;
   color: #333;
   background-color: #fff;
-  appearance: none; /* Remove default arrow */
-  -webkit-appearance: none; /* Remove default arrow for Safari */
-  -moz-appearance: none; /* Remove default arrow for Firefox */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /* Add a custom arrow */
@@ -125,6 +125,13 @@
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
+}
+
+/* Focus state for the select element */
+.dropdown-mod select:focus {
+  outline: none;
+  border-width: 1px;
+  border-color: #007bff;
 }
 
 /* Style the options */
