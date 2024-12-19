@@ -35,26 +35,10 @@ select.input-style {
   outline: none; /* Disable default outline */
 }
 
-/* Dropdown Customization */
-select.input-style {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 16px;
-  padding-right: 35px; /* Space for the arrow */
-}
-
 /* Focus State */
 .input-style:focus,
 select.input-style:focus {
   border-color: var(--color-button);
-  box-shadow: none; /* Remove heavy effects */
-}
-
-/* Touchscreen-specific enhancements */
-select.input-style:active {
-  outline: none;
-  box-shadow: none;
 }
 
 /* Responsive Styling */
