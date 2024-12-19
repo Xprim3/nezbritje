@@ -17,6 +17,14 @@
 # Input Styling 
 --------------------------------------------------------------*/
 
+.input-base-style label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 4px;
+  padding-left: 2px;
+}
+
 /* Base style for all input and select elements */
 .input-style, .input-style select {
   width: 100%;
