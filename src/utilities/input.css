@@ -140,3 +140,41 @@
   font-size: 1rem;
   color: #333;
 }
+
+/* Style the file input element */
+.file-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Focus state for the file input element */
+.file-input:focus {
+  outline: none;
+  border-width: 1px;
+  border-color: #007bff;
+}
+
+/* Style the date input element */
+.date-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Focus state for the date input element */
+.date-input:focus {
+  outline: none;
+  border-width: 1px;
+  border-color: #007bff;
+}
