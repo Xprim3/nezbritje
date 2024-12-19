@@ -738,7 +738,19 @@
 
   <!-- End of Bottom Navigation Button Script -->
 
+  <script>
+    document.querySelectorAll('select.input-style').forEach((dropdown) => {
+    dropdown.addEventListener('touchstart', () => {
+      // Force focus on touchstart to bypass delays
+      dropdown.focus();
+    });
 
+    dropdown.addEventListener('focus', () => {
+      // Immediately open the dropdown when focused
+      dropdown.click();
+    });
+  });
+  </script>
 
 
 
