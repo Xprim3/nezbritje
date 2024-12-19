@@ -35,39 +35,6 @@
   border-color: #007bff;
 }
 
-/* Date Input Styling */
-.responsive-date-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #333;
-}
-
-.responsive-date-input:focus {
-  outline: none;
-  border-color: #007bff;
-}
-
-.select-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #333;
-  box-sizing: border-box;
-  margin-top: 10px;
-}
-
-.select-input:focus {
-  outline: none;
-  border-color: #007bff;
-}
-
 .responsive-date-input {
   width: 100%;
   padding: 10px;
@@ -117,3 +84,52 @@
 /*--------------------------------------------------------------
 # End of Input Group Styling
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Dropdown Styling 
+--------------------------------------------------------------*/
+
+/* Style the dropdown container */
+.dropdown-mod {
+  margin-bottom: 15px;
+}
+
+/* Style the label */
+.dropdown-mod label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Style the select element */
+.dropdown-mod select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* Remove default arrow for Safari */
+  -moz-appearance: none; /* Remove default arrow for Firefox */
+}
+
+/* Add a custom arrow */
+.dropdown-mod select::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Style the options */
+.dropdown-mod select option {
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+}
