@@ -17,8 +17,8 @@
 # Input Styling 
 --------------------------------------------------------------*/
 
-/* Base style for all input elements */
-.input-style {
+/* Base style for all input and select elements */
+.input-style, .input-style select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -29,24 +29,16 @@
   background-color: #fff;
 }
 
-.input-base-style label {
-  font-size: 1rem;
-  font-weight: 700;
-  padding-left: 5px;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-/* Focus state for the input elements */
-.input-style:focus {
+/* Focus state for the input and select elements */
+.input-style:focus, .input-style select:focus {
   outline: none;
   border-width: 1px;
-  border-color: var(--color-button);
+  border-color: #007bff;
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  .input-style {
+  .input-style, .input-style select {
     font-size: 14px;
     padding: 8px;
   }
