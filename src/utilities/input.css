@@ -27,6 +27,7 @@
   font-weight: 400;
   color: #333;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 /* Focus state for the input and select elements */
