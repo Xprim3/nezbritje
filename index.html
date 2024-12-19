@@ -578,6 +578,61 @@
     </div>
   </div>
   <div class="modal-content-admin">
+    <div class="input-g-container">
+      <form>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Emri Biznesit</label>
+            <input class="input-style" type="text" name="bussines-name" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Ngarko Logon</label>
+            <input class="input-style" type="file" name="bussines-logo" accept="image/*" required>
+         </div>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Numri Telefonit</label>
+            <input class="input-style" type="number" name="phone-number" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Addressa</label>
+            <input class="input-style" type="number" name="address" required>
+          </div>
+        </div>
+        <div class="input-base-style d-flex flex-column w-100">
+          <label>Email Addresa</label>
+          <input class="input-style" type="email" name="email-address" required>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Marketi</label>
+            <select id="city" name="city" class="input-style" required>
+              <option value="TeGjitha">Te Gjitha</option>
+                <option value="tirana">ETC</option>
+                <option value="prishtina">Viva Fresh</option>
+                <option value="shkodra">Super Viva</option>
+                <option value="durres">Meridian</option>
+                <option value="vlora">Spar</option>
+            </select>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Qyteti</label>
+            <select id="city" name="city" class="input-style" required>
+                <option value="TeGjitha">Te Gjitha</option>
+                <option value="prishtina">Prishtina</option>
+                <option value="shkodra">Gjilani</option>
+                <option value="durres">Prizreni</option>
+                <option value="vlora">Peja</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-base-style d-flex flex-column w-100">
+          <label>Linku Zbritjes</label>
+          <input class="input-style" type="link" name="discount-links" required>
+        </div>
+      </form>
+    </div>
   </div>
   <div class="modal-buttons">
     <button>No</button>
