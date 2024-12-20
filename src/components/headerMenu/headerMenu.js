@@ -1,3 +1,9 @@
+// Ensure dropdown is closed on page load
+window.addEventListener('DOMContentLoaded', function () {
+  const dropdown = document.querySelector('.header-dropdown-btn');
+  dropdown.classList.remove('show'); // Ensure dropdown is closed after refresh
+});
+
 window.toggleDropdown = function () {
   const dropdown = document.querySelector('.header-dropdown-btn');
   

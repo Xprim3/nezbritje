@@ -55,6 +55,10 @@ header button {
   flex-wrap: nowrap;
 }
 
+.cartHeader h3 {
+  text-wrap: nowrap;
+}
+
 
 .cartHeader img {
   width: 140px;
