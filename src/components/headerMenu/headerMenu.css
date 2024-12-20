@@ -107,16 +107,17 @@ button.collapsible:hover {
   transform: translateY(0);
 }
 
-.header-dropdown-btn a {
+.header-dropdown-btn button {
   display: block;
   padding: 10px 5px;
+  width: 100%;
   color: rgb(0, 0, 0);
   font-size: 18px;
   text-decoration: none;
   text-align: center;
 }
 
-.header-dropdown-btn a:hover {
+.header-dropdown-btn button:hover {
   background-color: #ffffff;
   border-radius: 5px;
   color: var(--color-button);
