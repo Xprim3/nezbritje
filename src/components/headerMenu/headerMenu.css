@@ -81,3 +81,40 @@ header button {
   color: white;
   border: 1px solid white;
 }
+
+button.collapsible:hover {
+  background-color: #444;
+}
+
+.header-dropdown-btn {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  background-color: #ffffff;
+  min-width: 110px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.1s ease, visibility 0.1s ease;
+}
+
+.header-dropdown-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.header-dropdown-btn a {
+  display: block;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+}
+
+.header-dropdown-btn a:hover {
+  background-color: #555;
+}
+

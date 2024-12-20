@@ -46,16 +46,15 @@
           <a href="/pages/cart.html"><button><span class="material-symbols-outlined footer-icon btn-pad">shopping_cart</span></button></a>
         </div>
         <button><span class="material-symbols-outlined user-panel footer-icon btn-pad open-modal-btn" data-target="#modal9">login</span></button>
-        <div class="dropdown">
-          <button class="dropdown-button HeaderButtonDp"><span class="material-symbols-outlined admin-panel footer-icon btn-pad">account_circle</span></button>
-          <div class="dropdown-content headerProfile">
-            <button class="dropdown-option open-modal-btn" data-target="#modal14">Settings</button>
-            <button class="dropdown-option open-modal-btn" data-target="#modal11">Logout</button>
-          </div>
+        <button class="footer-icon btn-pad" onclick="toggleDropdown()"><span class="material-symbols-outlined admin-panel">account_circle</span></button>
+        <div class="header-dropdown-btn">
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
         </div>
       </div>
 
     </header>
+    
 
     <!-- End of Header  -->
 
