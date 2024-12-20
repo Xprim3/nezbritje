@@ -119,6 +119,7 @@ button.collapsible:hover {
 .header-dropdown-btn a:hover {
   background-color: #ffffff;
   border-radius: 5px;
+  color: var(--color-button);
   opacity: 0.8;
 
 }
