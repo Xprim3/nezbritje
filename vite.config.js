@@ -12,6 +12,7 @@ export default defineConfig({
         
         // Other pages inside the pages folder
         cart: resolve(__dirname, 'pages/cart.html'),
+        cart: resolve(__dirname, 'pages/notifications.html'),
         
         // Optionally, add JS entry points if needed
         uicomponents: resolve(__dirname, 'src/uicomponents.js'),

@@ -5,6 +5,7 @@ import '../src/components/headerMenu/headerMenu.css';
 import '../src/components/controls/controls.css';
 import '../src/components/modal/modal.css';
 import '../src/components/dropdown/dropdown.css';
+import '../src/components/notifications/notifications.css';
 
 // CSS utilities
 import '../src/utilities/input.css';
@@ -14,4 +15,5 @@ import '../src/utilities/GlobalUtilities.css';
 import './components/headerMenu/headerMenu.js';
 import './components/modal/modal.js';
 import './components/dropdown/dropdown.js';
+import './components/notifications/notifications.js';
 
