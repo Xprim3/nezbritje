@@ -444,47 +444,6 @@
       <form>
         <div class="d-flex flex-row flex-between col-gap-10">
           <div class="input-base-style d-flex flex-column w-100">
-            <label>Emri Produktit</label>
-            <input class="input-style" type="text" id="product-name" name="product-name" required>
-          </div>
-          <div class="input-base-style d-flex flex-column w-100">
-            <label>Ngarko Imazhin</label>
-            <input class="input-style" type="file" id="product-image" name="product-image" accept="image/*" required>
-         </div>
-        </div>
-        <div class="d-flex flex-row flex-between col-gap-10">
-          <div class="input-base-style d-flex flex-column w-100">
-            <label>Qmimi Produktit</label>
-            <input class="input-style" type="number" id="product-price" name="product-price" required>
-          </div>
-          <div class="input-base-style d-flex flex-column w-100">
-            <label>Zbritja Produktit</label>
-            <input class="input-style" type="number" id="product-discount" name="product-discount" required>
-          </div>
-        </div>
-        <div class="d-flex flex-row flex-between col-gap-10">
-          <div class="input-base-style d-flex flex-column w-100">
-            <label for="product-expiry">Add Data</label>
-            <input type="date" id="product-expiry" name="product-expiry" class="input-style" required>
-          </div>
-          <div class="input-base-style d-flex flex-column w-100">
-            <label for="product-expiry-future">Expiry Date</label>
-            <input type="date" id="product-expiry-future" name="product-expiry-future" class="input-style" required>
-          </div>
-        </div>
-        <div class="input-base-style d-flex flex-column w-100">
-          <label>Origjina</label>
-          <select id="city" name="city" class="input-style" required>
-            <option value="TeGjitha">Te Gjitha</option>
-              <option value="tirana">Albania</option>
-              <option value="prishtina">Serbia</option>
-              <option value="shkodra">Macedonia</option>
-              <option value="durres">Belgium</option>
-              <option value="vlora">England</option>
-          </select>
-        </div>
-        <div class="d-flex flex-row flex-between col-gap-10">
-          <div class="input-base-style d-flex flex-column w-100">
             <label>Marketi</label>
             <select id="city" name="city" class="input-style" required>
               <option value="TeGjitha">Te Gjitha</option>
@@ -506,13 +465,177 @@
             </select>
           </div>
         </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label for="product-expiry">Add Data</label>
+            <input type="date" id="product-expiry" name="product-expiry" class="input-style" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label for="product-expiry-future">Expiry Date</label>
+            <input type="date" id="product-expiry-future" name="product-expiry-future" class="input-style" required>
+          </div>
+        </div>
         <div class="input-base-style d-flex flex-column w-100">
           <label>Linku Zbritjes</label>
           <input class="input-style" type="link" id="product-name" name="product-name" required>
         </div>
       </form>
     </div>
-    
+
+
+    <div class="input-g-container">
+      <div class="ProductBtnBox">
+        <button class="d-flex flex-align-center col-gap-5"><span class="material-symbols-outlined">add</span>Add Product</button>
+      </div>
+
+      <form class="FormCls">
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Emri Produktit</label>
+            <input class="input-style" type="text" id="product-name" name="product-name" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Ngarko Imazhin</label>
+            <input class="input-style" type="file" id="product-image" name="product-image" accept="image/*" required>
+         </div>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Qmimi Produktit</label>
+            <input class="input-style" type="number" id="product-price" name="product-price" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Zbritja Produktit</label>
+            <input class="input-style" type="number" id="product-discount" name="product-discount" required>
+          </div>
+        </div>
+        <div class="input-base-style d-flex flex-column w-100">
+          <label>Origjina</label>
+          <select id="city" name="city" class="input-style" required>
+            <option value="TeGjitha">Te Gjitha</option>
+              <option value="tirana">Albania</option>
+              <option value="prishtina">Serbia</option>
+              <option value="shkodra">Macedonia</option>
+              <option value="durres">Belgium</option>
+              <option value="vlora">England</option>
+          </select>
+        </div>
+        <div class="ProductBtnBox d-flex flex-end">
+          <button>Delete</button>
+        </div>
+      </form>
+
+      <form class="FormCls">
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Emri Produktit</label>
+            <input class="input-style" type="text" id="product-name" name="product-name" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Ngarko Imazhin</label>
+            <input class="input-style" type="file" id="product-image" name="product-image" accept="image/*" required>
+         </div>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Qmimi Produktit</label>
+            <input class="input-style" type="number" id="product-price" name="product-price" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Zbritja Produktit</label>
+            <input class="input-style" type="number" id="product-discount" name="product-discount" required>
+          </div>
+        </div>
+        <div class="input-base-style d-flex flex-column w-100">
+          <label>Origjina</label>
+          <select id="city" name="city" class="input-style" required>
+            <option value="TeGjitha">Te Gjitha</option>
+              <option value="tirana">Albania</option>
+              <option value="prishtina">Serbia</option>
+              <option value="shkodra">Macedonia</option>
+              <option value="durres">Belgium</option>
+              <option value="vlora">England</option>
+          </select>
+        </div>
+        <div class="ProductBtnBox d-flex flex-end">
+          <button>Delete</button>
+        </div>
+      </form>
+
+      <form class="FormCls">
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Emri Produktit</label>
+            <input class="input-style" type="text" id="product-name" name="product-name" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Ngarko Imazhin</label>
+            <input class="input-style" type="file" id="product-image" name="product-image" accept="image/*" required>
+         </div>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Qmimi Produktit</label>
+            <input class="input-style" type="number" id="product-price" name="product-price" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Zbritja Produktit</label>
+            <input class="input-style" type="number" id="product-discount" name="product-discount" required>
+          </div>
+        </div>
+        <div class="input-base-style d-flex flex-column w-100">
+          <label>Origjina</label>
+          <select id="city" name="city" class="input-style" required>
+            <option value="TeGjitha">Te Gjitha</option>
+              <option value="tirana">Albania</option>
+              <option value="prishtina">Serbia</option>
+              <option value="shkodra">Macedonia</option>
+              <option value="durres">Belgium</option>
+              <option value="vlora">England</option>
+          </select>
+        </div>
+        <div class="ProductBtnBox d-flex flex-end">
+          <button>Delete</button>
+        </div>
+      </form>
+
+      <form class="FormCls">
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Emri Produktit</label>
+            <input class="input-style" type="text" id="product-name" name="product-name" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Ngarko Imazhin</label>
+            <input class="input-style" type="file" id="product-image" name="product-image" accept="image/*" required>
+         </div>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Qmimi Produktit</label>
+            <input class="input-style" type="number" id="product-price" name="product-price" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Zbritja Produktit</label>
+            <input class="input-style" type="number" id="product-discount" name="product-discount" required>
+          </div>
+        </div>
+        <div class="input-base-style d-flex flex-column w-100">
+          <label>Origjina</label>
+          <select id="city" name="city" class="input-style" required>
+            <option value="TeGjitha">Te Gjitha</option>
+              <option value="tirana">Albania</option>
+              <option value="prishtina">Serbia</option>
+              <option value="shkodra">Macedonia</option>
+              <option value="durres">Belgium</option>
+              <option value="vlora">England</option>
+          </select>
+        </div>
+        <div class="ProductBtnBox d-flex flex-end">
+          <button>Delete</button>
+        </div>
+      </form>
+    </div>
   </div>
   <div class="modal-buttons">
     <button>No</button>
@@ -582,6 +705,7 @@
       <span class="material-symbols-outlined">close</span>
     </div>
   </div>
+
   <div class="modal-content-admin">
     <div class="input-g-container">
       <form>
@@ -627,11 +751,9 @@
 
 
     <div class="input-g-container">
-
       <div class="ProductBtnBox">
         <button class="d-flex flex-align-center col-gap-5"><span class="material-symbols-outlined">add</span>Add Product</button>
       </div>
-
 
       <form class="FormCls">
         <div class="d-flex flex-row flex-between col-gap-10">
@@ -670,16 +792,119 @@
         </div>
       </form>
 
-      
+      <form class="FormCls">
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Emri Produktit</label>
+            <input class="input-style" type="text" id="product-name" name="product-name" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Ngarko Imazhin</label>
+            <input class="input-style" type="file" id="product-image" name="product-image" accept="image/*" required>
+         </div>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Qmimi Produktit</label>
+            <input class="input-style" type="number" id="product-price" name="product-price" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Zbritja Produktit</label>
+            <input class="input-style" type="number" id="product-discount" name="product-discount" required>
+          </div>
+        </div>
+        <div class="input-base-style d-flex flex-column w-100">
+          <label>Origjina</label>
+          <select id="city" name="city" class="input-style" required>
+            <option value="TeGjitha">Te Gjitha</option>
+              <option value="tirana">Albania</option>
+              <option value="prishtina">Serbia</option>
+              <option value="shkodra">Macedonia</option>
+              <option value="durres">Belgium</option>
+              <option value="vlora">England</option>
+          </select>
+        </div>
+        <div class="ProductBtnBox d-flex flex-end">
+          <button>Delete</button>
+        </div>
+      </form>
 
+      <form class="FormCls">
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Emri Produktit</label>
+            <input class="input-style" type="text" id="product-name" name="product-name" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Ngarko Imazhin</label>
+            <input class="input-style" type="file" id="product-image" name="product-image" accept="image/*" required>
+         </div>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Qmimi Produktit</label>
+            <input class="input-style" type="number" id="product-price" name="product-price" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Zbritja Produktit</label>
+            <input class="input-style" type="number" id="product-discount" name="product-discount" required>
+          </div>
+        </div>
+        <div class="input-base-style d-flex flex-column w-100">
+          <label>Origjina</label>
+          <select id="city" name="city" class="input-style" required>
+            <option value="TeGjitha">Te Gjitha</option>
+              <option value="tirana">Albania</option>
+              <option value="prishtina">Serbia</option>
+              <option value="shkodra">Macedonia</option>
+              <option value="durres">Belgium</option>
+              <option value="vlora">England</option>
+          </select>
+        </div>
+        <div class="ProductBtnBox d-flex flex-end">
+          <button>Delete</button>
+        </div>
+      </form>
 
-
+      <form class="FormCls">
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Emri Produktit</label>
+            <input class="input-style" type="text" id="product-name" name="product-name" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Ngarko Imazhin</label>
+            <input class="input-style" type="file" id="product-image" name="product-image" accept="image/*" required>
+         </div>
+        </div>
+        <div class="d-flex flex-row flex-between col-gap-10">
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Qmimi Produktit</label>
+            <input class="input-style" type="number" id="product-price" name="product-price" required>
+          </div>
+          <div class="input-base-style d-flex flex-column w-100">
+            <label>Zbritja Produktit</label>
+            <input class="input-style" type="number" id="product-discount" name="product-discount" required>
+          </div>
+        </div>
+        <div class="input-base-style d-flex flex-column w-100">
+          <label>Origjina</label>
+          <select id="city" name="city" class="input-style" required>
+            <option value="TeGjitha">Te Gjitha</option>
+              <option value="tirana">Albania</option>
+              <option value="prishtina">Serbia</option>
+              <option value="shkodra">Macedonia</option>
+              <option value="durres">Belgium</option>
+              <option value="vlora">England</option>
+          </select>
+        </div>
+        <div class="ProductBtnBox d-flex flex-end">
+          <button>Delete</button>
+        </div>
+      </form>
     </div>
-
-
-
-
   </div>
+
   <div class="modal-buttons">
     <button>No</button>
     <button>Yes</button>
