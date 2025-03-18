@@ -10,6 +10,12 @@
   padding: 15px 0;
 }
 
+.FormCls {
+  background-color: rgb(222, 222, 222);
+  padding: 15px;
+  border-radius: 5px;
+}
+
 /* Label Styling */
 .input-base-style label {
   font-size: 1rem;
@@ -39,6 +45,17 @@ select.input-style {
 .input-style:focus,
 select.input-style:focus {
   border-color: var(--color-button);
+}
+
+.ProductBtnBox button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-button);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+
 }
 
 /* Responsive Styling */
