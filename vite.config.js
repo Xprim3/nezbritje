@@ -7,25 +7,20 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        // Main entry file at the root
-        main: resolve(__dirname, 'index.html'),  
-        
-        // Other pages inside the pages folder
+        main: resolve(__dirname, 'index.html'),
         cart: resolve(__dirname, 'pages/cart.html'),
-        cart: resolve(__dirname, 'pages/notifications.html'),
-        
-        // Optionally, add JS entry points if needed
+        notifications: resolve(__dirname, 'pages/notifications.html'),
         uicomponents: resolve(__dirname, 'src/uicomponents.js'),
       },
       output: {
-        dir: 'dist',  // Output directory for the built files
+        dir: 'dist',
       }
     },
   },
 
   resolve: {
     alias: {
-      '@components': resolve(__dirname, 'src/components'),  // For easier imports
+      '@components': resolve(__dirname, 'src/components'),
     },
   },
 });
